@@ -1,0 +1,65 @@
+2018-04-19 19:47:29	logger.py	TempUser	Log cleared
+2018-04-19 19:47:29	logger.py	TempUser	Max log size reached: 2000 - Started new log.
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_47_04.log
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_55.log
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_58.log
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_47_02.log
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_57.log
+2018-04-19 19:47:29	logger.py	TempUser	Unexpected item found in log directory: 1234.txt
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_54.log
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_48.log
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_47_07.log
+2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_51.log
+2018-04-19 19:47:29	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 19:47:29	metrics.py	TempUser	Full report generated.
+2018-04-19 19:49:20	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-19 19:49:20	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-19 19:49:20	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-19 19:49:20	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-19 19:49:20	metrics.py	TempUser	Sensors: {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}
+2018-04-19 19:49:20	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 19:49:20	metrics.py	TempUser	Full report generated.
+2018-04-19 19:49:23	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-19 19:49:23	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-19 19:49:23	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-19 19:49:23	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-19 19:49:23	metrics.py	TempUser	Sensors: {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}
+2018-04-19 19:49:23	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 19:49:23	metrics.py	TempUser	Full report generated.
+2018-04-19 20:43:36	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-19 20:43:36	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-19 20:43:36	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-19 20:43:36	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-19 20:43:36	metrics.py	TempUser	Sensors: {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}
+2018-04-19 20:43:36	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 20:43:36	metrics.py	TempUser	Full report generated.
+2018-04-19 20:45:02	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-19 20:45:02	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-19 20:45:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-19 20:45:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-19 20:45:02	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 20:45:02	metrics.py	TempUser	Full report generated.
+2018-04-19 20:45:34	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-19 20:45:34	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-19 20:45:34	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-19 20:45:34	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-19 20:45:34	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 20:45:34	metrics.py	TempUser	{'sensors': {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}}
+2018-04-19 20:45:34	metrics.py	TempUser	Full report generated.
+2018-04-19 21:03:35	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-19 21:03:35	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-19 21:03:35	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-19 21:03:35	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-19 21:03:35	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 21:03:35	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4-.
+2018-04-19 21:03:35	metrics.py	TempUser	{'sensors': {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}, 'uptime': '8 weeks, 6 days, 16 hours, 13 minutes\n'}
+2018-04-19 21:03:35	metrics.py	TempUser	Full report generated.
+2018-04-19 21:05:31	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-19 21:05:31	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-19 21:05:31	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-19 21:05:31	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-19 21:05:31	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-19 21:05:31	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '
+'.
+2018-04-19 21:05:31	metrics.py	TempUser	{'sensors': {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}, 'uptime': '8 weeks, 6 days, 16 hours, 15 minutes'}
+2018-04-19 21:05:31	metrics.py	TempUser	Full report generated.

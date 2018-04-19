@@ -1,0 +1,19 @@
+acpitz-virtual-0
+Adapter: Virtual device
+temp1:
+  temp1_input: 6.000
+  temp1_crit: 127.000
+
+k10temp-pci-00c3
+Adapter: PCI adapter
+temp1:
+  temp1_input: 12.875
+  temp1_max: 70.000
+  temp1_crit: 80.000
+  temp1_crit_hyst: 77.000
+
+fam15h_power-pci-00c4
+Adapter: PCI adapter
+power1:
+  power1_input: 109.027
+  power1_crit: 125.188
