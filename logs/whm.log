@@ -1,65 +1,217 @@
-2018-04-19 19:47:29	logger.py	TempUser	Log cleared
-2018-04-19 19:47:29	logger.py	TempUser	Max log size reached: 2000 - Started new log.
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_47_04.log
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_55.log
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_58.log
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_47_02.log
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_57.log
-2018-04-19 19:47:29	logger.py	TempUser	Unexpected item found in log directory: 1234.txt
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_54.log
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_48.log
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_47_07.log
-2018-04-19 19:47:29	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_19_19_46_51.log
-2018-04-19 19:47:29	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 19:47:29	metrics.py	TempUser	Full report generated.
-2018-04-19 19:49:20	metrics.py	TempUser	Began collecting metrics: ./metrics.py
-2018-04-19 19:49:20	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
-2018-04-19 19:49:20	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
-2018-04-19 19:49:20	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
-2018-04-19 19:49:20	metrics.py	TempUser	Sensors: {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}
-2018-04-19 19:49:20	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 19:49:20	metrics.py	TempUser	Full report generated.
-2018-04-19 19:49:23	metrics.py	TempUser	Began collecting metrics: ./metrics.py
-2018-04-19 19:49:23	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
-2018-04-19 19:49:23	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
-2018-04-19 19:49:23	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
-2018-04-19 19:49:23	metrics.py	TempUser	Sensors: {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}
-2018-04-19 19:49:23	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 19:49:23	metrics.py	TempUser	Full report generated.
-2018-04-19 20:43:36	metrics.py	TempUser	Began collecting metrics: ./metrics.py
-2018-04-19 20:43:36	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
-2018-04-19 20:43:36	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
-2018-04-19 20:43:36	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
-2018-04-19 20:43:36	metrics.py	TempUser	Sensors: {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}
-2018-04-19 20:43:36	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 20:43:36	metrics.py	TempUser	Full report generated.
-2018-04-19 20:45:02	metrics.py	TempUser	Began collecting metrics: ./metrics.py
-2018-04-19 20:45:02	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
-2018-04-19 20:45:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
-2018-04-19 20:45:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
-2018-04-19 20:45:02	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 20:45:02	metrics.py	TempUser	Full report generated.
-2018-04-19 20:45:34	metrics.py	TempUser	Began collecting metrics: ./metrics.py
-2018-04-19 20:45:34	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
-2018-04-19 20:45:34	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
-2018-04-19 20:45:34	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
-2018-04-19 20:45:34	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 20:45:34	metrics.py	TempUser	{'sensors': {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}}
-2018-04-19 20:45:34	metrics.py	TempUser	Full report generated.
-2018-04-19 21:03:35	metrics.py	TempUser	Began collecting metrics: ./metrics.py
-2018-04-19 21:03:35	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
-2018-04-19 21:03:35	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
-2018-04-19 21:03:35	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
-2018-04-19 21:03:35	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 21:03:35	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4-.
-2018-04-19 21:03:35	metrics.py	TempUser	{'sensors': {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}, 'uptime': '8 weeks, 6 days, 16 hours, 13 minutes\n'}
-2018-04-19 21:03:35	metrics.py	TempUser	Full report generated.
-2018-04-19 21:05:31	metrics.py	TempUser	Began collecting metrics: ./metrics.py
-2018-04-19 21:05:31	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
-2018-04-19 21:05:31	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
-2018-04-19 21:05:31	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
-2018-04-19 21:05:31	metrics.py	TempUser	Sensors parsed and added to report.
-2018-04-19 21:05:31	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '
-'.
-2018-04-19 21:05:31	metrics.py	TempUser	{'sensors': {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}, 'uptime': '8 weeks, 6 days, 16 hours, 15 minutes'}
-2018-04-19 21:05:31	metrics.py	TempUser	Full report generated.
+2018-04-22 00:52:34	logger.py	TempUser	Log cleared
+2018-04-22 00:52:34	logger.py	TempUser	Max log size reached: 2000 - Started new log.
+2018-04-22 00:52:34	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_22_00_50_38.log
+2018-04-22 00:52:34	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_22_00_50_37.log
+2018-04-22 00:52:34	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_22_00_50_15.log
+2018-04-22 00:52:34	logger.py	TempUser	Deleted aged log: whm_bak_2018_04_22_00_50_26.log
+2018-04-22 00:52:34	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-22 00:52:34	metrics.py	TempUser	Added uptime to report.
+2018-04-22 00:52:34	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-22 00:52:34	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-22 00:52:34	metrics.py	TempUser	Successfully ran free -o.
+2018-04-22 00:52:34	metrics.py	TempUser	Memory stats collected.
+2018-04-22 00:52:34	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-22 00:52:34	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-22 00:52:34	metrics.py	TempUser	Full report generated.
+2018-04-22 00:52:34	logger.py	TempUser	Tried to backup whm.log to whm_bak_2018_04_22_00_52_34.log, but file already existed.
+2018-04-22 00:53:53	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-22 00:53:53	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-22 00:53:53	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-22 00:53:53	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-22 00:53:53	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-22 00:53:53	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-22 00:53:53	metrics.py	TempUser	Added uptime to report.
+2018-04-22 00:53:53	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-22 00:53:53	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-22 00:53:53	metrics.py	TempUser	Successfully ran free -o.
+2018-04-22 00:53:53	metrics.py	TempUser	Memory stats collected.
+2018-04-22 00:53:53	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-22 00:53:53	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-22 00:53:53	metrics.py	TempUser	Full report generated.
+2018-04-22 00:55:02	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-22 00:55:02	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-22 00:55:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-22 00:55:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-22 00:55:02	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-22 00:55:02	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-22 00:55:02	metrics.py	TempUser	Added uptime to report.
+2018-04-22 00:55:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-22 00:55:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-22 00:55:02	metrics.py	TempUser	Successfully ran free -o.
+2018-04-22 00:55:02	metrics.py	TempUser	Memory stats collected.
+2018-04-22 00:55:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-22 00:55:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-22 00:55:02	metrics.py	TempUser	Full report generated.
+2018-04-22 00:55:20	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-22 00:55:20	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-22 00:55:20	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-22 00:55:20	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-22 00:55:20	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-22 00:55:20	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-22 00:55:20	metrics.py	TempUser	Added uptime to report.
+2018-04-22 00:55:20	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-22 00:55:20	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-22 00:55:20	metrics.py	TempUser	Successfully ran free -o.
+2018-04-22 00:55:20	metrics.py	TempUser	Memory stats collected.
+2018-04-22 00:55:20	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-22 00:55:20	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-22 00:55:20	metrics.py	TempUser	Full report generated.
+2018-04-22 00:55:20	metrics.py	TempUser	{'sensors': {'device0': {'name0': 'acpitz-virtual-0', 'name1': 'Virtual device', 'values': {'temp1_input': '6.000', 'temp1_crit': '127.000'}}, 'device1': {'name0': 'k10temp-pci-00c3', 'name1': 'PCI adapter', 'values': {'temp1_input': '12.875', 'temp1_max': '70.000', 'temp1_crit': '80.000', 'temp1_crit_hyst': '77.000'}}, 'device2': {'name0': 'fam15h_power-pci-00c4', 'name1': 'PCI adapter', 'values': {'power1_input': '109.027', 'power1_crit': '125.188'}}}, 'uptime': '9 weeks, 1 day, 20 hours, 4 minutes', 'dmesg': "[    2.479833] [drm] Radeon Display Connectors\n[    2.479835] [drm] Connector 0:\n[    2.479836] [drm]   VGA-1\n[    2.479837] [drm]   DDC: 0x60 0x60 0x60 0x60 0x60 0x60 0x60 0x60\n[    2.479838] [drm]   Encoders:\n[    2.479838] [drm]     CRT1: INTERNAL_DAC1\n[    2.479839] [drm] Connector 1:\n[    2.479840] [drm]   DVI-I-1\n[    2.479841] [drm]   HPD1\n[    2.479842] [drm]   DDC: 0x64 0x64 0x64 0x64 0x64 0x64 0x64 0x64\n[    2.479842] [drm]   Encoders:\n[    2.479843] [drm]     CRT2: INTERNAL_DAC2\n[    2.479844] [drm]     DFP1: INTERNAL_TMDS1\n[    2.479844] [drm] Connector 2:\n[    2.479845] [drm]   SVIDEO-1\n[    2.479846] [drm]   Encoders:\n[    2.479846] [drm]     TV1: INTERNAL_DAC2\n[    2.483253] EXT4-fs (sda3): re-mounted. Opts: errors=remount-ro\n[    2.488655] ehci-pci 0000:00:13.2: USB 2.0 started, EHCI 1.00\n[    2.488775] usb usb4: New USB device found, idVendor=1d6b, idProduct=0002\n[    2.488777] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.488779] usb usb4: Product: EHCI Host Controller\n[    2.488781] usb usb4: Manufacturer: Linux 3.16.0-4-amd64 ehci_hcd\n[    2.488782] usb usb4: SerialNumber: 0000:00:13.2\n[    2.489027] hub 4-0:1.0: USB hub found\n[    2.489055] hub 4-0:1.0: 5 ports detected\n[    2.489369] xhci_hcd 0000:04:00.0: xHCI Host Controller\n[    2.489376] xhci_hcd 0000:04:00.0: new USB bus registered, assigned bus number 5\n[    2.495623] FAT-fs (sda2): utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!\n[    2.549711] radeon 0000:01:00.0: No connectors reported connected with modes\n[    2.549717] [drm] Cannot find any crtc or sizes - going 1024x768\n[    2.549884] xhci_hcd 0000:04:00.0: irq 41 for MSI/MSI-X\n[    2.549891] xhci_hcd 0000:04:00.0: irq 50 for MSI/MSI-X\n[    2.549895] xhci_hcd 0000:04:00.0: irq 51 for MSI/MSI-X\n[    2.549900] xhci_hcd 0000:04:00.0: irq 52 for MSI/MSI-X\n[    2.549906] xhci_hcd 0000:04:00.0: irq 53 for MSI/MSI-X\n[    2.549913] xhci_hcd 0000:04:00.0: irq 54 for MSI/MSI-X\n[    2.549920] xhci_hcd 0000:04:00.0: irq 55 for MSI/MSI-X\n[    2.549924] xhci_hcd 0000:04:00.0: irq 56 for MSI/MSI-X\n[    2.550120] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002\n[    2.550122] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.550124] usb usb5: Product: xHCI Host Controller\n[    2.550126] usb usb5: Manufacturer: Linux 3.16.0-4-amd64 xhci_hcd\n[    2.550128] usb usb5: SerialNumber: 0000:04:00.0\n[    2.552344] [drm] fb mappable at 0xE0040000\n[    2.552345] Switched to clocksource tsc\n[    2.552346] [drm] vram apper at 0xE0000000\n[    2.552347] [drm] size 3145728\n[    2.552348] [drm] fb depth is 24\n[    2.552349] [drm]    pitch is 4096\n[    2.552467] fbcon: radeondrmfb (fb0) is primary device\n[    2.552529] Console: switching to colour frame buffer device 128x48\n[    2.552530] hub 5-0:1.0: USB hub found\n[    2.552537] hub 5-0:1.0: 1 port detected\n[    2.552621] xhci_hcd 0000:04:00.0: xHCI Host Controller\n[    2.552624] xhci_hcd 0000:04:00.0: new USB bus registered, assigned bus number 6\n[    2.552632] ehci-pci 0000:00:16.2: EHCI Host Controller\n[    2.552636] ehci-pci 0000:00:16.2: new USB bus registered, assigned bus number 7\n[    2.552638] ehci-pci 0000:00:16.2: applying AMD SB700/SB800/Hudson-2/3 EHCI dummy qh workaround\n[    2.552669] ehci-pci 0000:00:16.2: debug port 1\n[    2.552676] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.\n[    2.552696] usb usb6: New USB device found, idVendor=1d6b, idProduct=0003\n[    2.552697] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.552698] usb usb6: Product: xHCI Host Controller\n[    2.552702] usb usb6: Manufacturer: Linux 3.16.0-4-amd64 xhci_hcd\n[    2.552705] usb usb6: SerialNumber: 0000:04:00.0\n[    2.552709] ehci-pci 0000:00:16.2: irq 17, io mem 0xfea04000\n[    2.552825] hub 6-0:1.0: USB hub found\n[    2.552834] hub 6-0:1.0: 1 port detected\n[    2.555134] radeon 0000:01:00.0: fb0: radeondrmfb frame buffer device\n[    2.555135] radeon 0000:01:00.0: registered panic notifier\n[    2.556709] FAT-fs (sda2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.\n[    2.564651] ehci-pci 0000:00:16.2: USB 2.0 started, EHCI 1.00\n[    2.564749] usb usb7: New USB device found, idVendor=1d6b, idProduct=0002\n[    2.564754] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.564757] usb usb7: Product: EHCI Host Controller\n[    2.564760] usb usb7: Manufacturer: Linux 3.16.0-4-amd64 ehci_hcd\n[    2.564763] usb usb7: SerialNumber: 0000:00:16.2\n[    2.564964] hub 7-0:1.0: USB hub found\n[    2.564981] hub 7-0:1.0: 4 ports detected\n[    2.565257] piix4_smbus 0000:00:14.0: SMBus Host Controller at 0xb00, revision 0\n[    2.565343] piix4_smbus 0000:00:14.0: Auxiliary SMBus Host Controller at 0xb20\n[    2.579093] ohci-pci: OHCI PCI platform driver\n[    2.579228] sp5100_tco: SP5100/SB800 TCO WatchDog Timer Driver v0.05\n[    2.579302] ohci-pci 0000:00:12.0: OHCI PCI host controller\n[    2.579316] ohci-pci 0000:00:12.0: new USB bus registered, assigned bus number 8\n[    2.579350] ohci-pci 0000:00:12.0: irq 18, io mem 0xfea0a000\n[    2.579353] sp5100_tco: PCI Revision ID: 0x42\n[    2.579383] sp5100_tco: Using 0xfed80b00 for watchdog MMIO address\n[    2.579394] sp5100_tco: Last reboot was not triggered by watchdog.\n[    2.579590] sp5100_tco: initialized (0xffffc900018b4b00). heartbeat=60 sec (nowayout=0)\n[    2.580829] [drm] Initialized radeon 2.39.0 20080528 for 0000:01:00.0 on minor 0\n[    2.591241] sound hdaudioC0D3: autoconfig: line_outs=4 (0x14/0x15/0x16/0x17/0x0) type:line\n[    2.591244] sound hdaudioC0D3:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)\n[    2.591246] sound hdaudioC0D3:    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)\n[    2.591247] sound hdaudioC0D3:    mono: mono_out=0x0\n[    2.591249] sound hdaudioC0D3:    dig-out=0x1e/0x0\n[    2.591250] sound hdaudioC0D3:    inputs:\n[    2.591252] sound hdaudioC0D3:      Front Mic=0x19\n[    2.591253] sound hdaudioC0D3:      Rear Mic=0x18\n[    2.591255] sound hdaudioC0D3:      Line=0x1a\n[    2.604840] input: HDA ATI SB Front Mic as /devices/pci0000:00/0000:00:14.2/sound/card0/input6\n[    2.604927] input: HDA ATI SB Rear Mic as /devices/pci0000:00/0000:00:14.2/sound/card0/input7\n[    2.605026] input: HDA ATI SB Line as /devices/pci0000:00/0000:00:14.2/sound/card0/input8\n[    2.605195] input: HDA ATI SB Line Out Front as /devices/pci0000:00/0000:00:14.2/sound/card0/input9\n[    2.605381] input: HDA ATI SB Line Out Surround as /devices/pci0000:00/0000:00:14.2/sound/card0/input10\n[    2.605674] input: HDA ATI SB Line Out CLFE as /devices/pci0000:00/0000:00:14.2/sound/card0/input11\n[    2.606030] input: HDA ATI SB Line Out Side as /devices/pci0000:00/0000:00:14.2/sound/card0/input12\n[    2.607471] input: HDA ATI SB Front Headphone as /devices/pci0000:00/0000:00:14.2/sound/card0/input13\n[    2.636781] usb usb8: New USB device found, idVendor=1d6b, idProduct=0001\n[    2.636788] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.636793] usb usb8: Product: OHCI PCI host controller\n[    2.636797] usb usb8: Manufacturer: Linux 3.16.0-4-amd64 ohci_hcd\n[    2.636801] usb usb8: SerialNumber: 0000:00:12.0\n[    2.637079] hub 8-0:1.0: USB hub found\n[    2.637095] hub 8-0:1.0: 5 ports detected\n[    2.637763] ohci-pci 0000:00:13.0: OHCI PCI host controller\n[    2.637775] ohci-pci 0000:00:13.0: new USB bus registered, assigned bus number 9\n[    2.637814] ohci-pci 0000:00:13.0: irq 18, io mem 0xfea08000\n[    2.696731] usb usb9: New USB device found, idVendor=1d6b, idProduct=0001\n[    2.696737] usb usb9: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.696740] usb usb9: Product: OHCI PCI host controller\n[    2.696743] usb usb9: Manufacturer: Linux 3.16.0-4-amd64 ohci_hcd\n[    2.696745] usb usb9: SerialNumber: 0000:00:13.0\n[    2.697052] hub 9-0:1.0: USB hub found\n[    2.697072] hub 9-0:1.0: 5 ports detected\n[    2.697726] ohci-pci 0000:00:14.5: OHCI PCI host controller\n[    2.697738] ohci-pci 0000:00:14.5: new USB bus registered, assigned bus number 10\n[    2.697777] ohci-pci 0000:00:14.5: irq 18, io mem 0xfea06000\n[    2.756754] usb usb10: New USB device found, idVendor=1d6b, idProduct=0001\n[    2.756762] usb usb10: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.756767] usb usb10: Product: OHCI PCI host controller\n[    2.756771] usb usb10: Manufacturer: Linux 3.16.0-4-amd64 ohci_hcd\n[    2.756775] usb usb10: SerialNumber: 0000:00:14.5\n[    2.756985] hub 10-0:1.0: USB hub found\n[    2.756997] hub 10-0:1.0: 2 ports detected\n[    2.757384] ohci-pci 0000:00:16.0: OHCI PCI host controller\n[    2.757393] ohci-pci 0000:00:16.0: new USB bus registered, assigned bus number 11\n[    2.757418] ohci-pci 0000:00:16.0: irq 18, io mem 0xfea05000\n[    2.816757] usb usb11: New USB device found, idVendor=1d6b, idProduct=0001\n[    2.816765] usb usb11: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.816770] usb usb11: Product: OHCI PCI host controller\n[    2.816774] usb usb11: Manufacturer: Linux 3.16.0-4-amd64 ohci_hcd\n[    2.816777] usb usb11: SerialNumber: 0000:00:16.0\n[    2.817081] hub 11-0:1.0: USB hub found\n[    2.817097] hub 11-0:1.0: 4 ports detected\n[    3.444217] EXT4-fs (md0): mounted filesystem with ordered data mode. Opts: (null)\n[    3.452945] systemd-journald[232]: Received request to flush runtime journal from PID 1\n[    3.495836] r8169 0000:05:00.0: firmware: failed to load rtl_nic/rtl8168g-2.fw (-2)\n[    3.495889] r8169 0000:05:00.0: Direct firmware load failed with error -2\n[    3.495892] r8169 0000:05:00.0: Falling back to user helper\n[    3.496329] r8169 0000:05:00.0 eth0: unable to load firmware patch rtl_nic/rtl8168g-2.fw (-12)\n[    3.506776] r8169 0000:05:00.0 eth0: link down\n[    3.506813] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready\n[    3.506832] r8169 0000:05:00.0 eth0: link down\n[    5.087016] r8169 0000:05:00.0 eth0: link up\n[    5.087031] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready\n[711752.272589] md: data-check of RAID array md0\n[711752.272592] md: minimum _guaranteed_  speed: 1000 KB/sec/disk.\n[711752.272593] md: using maximum available idle IO bandwidth (but not more than 200000 KB/sec) for data-check.\n[711752.272598] md: using 128k window, over a total of 1953382400k.\n[732897.383070] md: md0: data-check done.\n[1916766.149163] UDP: bad checksum. From 60.191.29.20:46904 to 192.168.1.100:22 ulen 37\n[2162312.818887] perf interrupt took too long (2502 > 2500), lowering kernel.perf_event_max_sample_rate to 50000\n[3127471.687805] md: data-check of RAID array md0\n[3127471.687808] md: minimum _guaranteed_  speed: 1000 KB/sec/disk.\n[3127471.687810] md: using maximum available idle IO bandwidth (but not more than 200000 KB/sec) for data-check.\n[3127471.687816] md: using 128k window, over a total of 1953382400k.\n[3148580.631489] md: md0: data-check done.\n[4468504.006237] i2c /dev entries driver\n[4637993.410046] systemd-udevd[13128]: starting version 215\n[4638073.354724] device-mapper: uevent: version 1.0.3\n[4638073.354872] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com\n[4638074.085553] xfs: Unknown symbol setattr_prepare (err 0)\n[4638074.085688] xfs: disagrees about version of symbol perf_trace_buf_prepare\n[4638074.085689] xfs: Unknown symbol perf_trace_buf_prepare (err -22)\n[4638074.086250] xfs: Unknown symbol posix_acl_update_mode (err 0)\n[4638074.088279] jfs: Unknown symbol setattr_prepare (err 0)\n[4638074.088653] jfs: Unknown symbol posix_acl_update_mode (err 0)\n[4638074.093552] ntfs: Unknown symbol setattr_prepare (err 0)\n[4638074.094989] minix: Unknown symbol setattr_prepare (err 0)\n[4638074.096195] hfs: Unknown symbol setattr_prepare (err 0)\n[4638074.097478] hfsplus: Unknown symbol setattr_prepare (err 0)\n[4638074.099009] QNX4 filesystem 0.2.3 registered.\n[4638074.100391] ufs: Unknown symbol setattr_prepare (err 0)\n[4638074.100421] ufs: Unknown symbol __inode_add_bytes (err 0)\n[4638074.103389] btrfs: Unknown symbol setattr_prepare (err 0)\n[4638074.103653] btrfs: disagrees about version of symbol perf_trace_buf_prepare\n[4638074.103656] btrfs: Unknown symbol perf_trace_buf_prepare (err -22)\n[4638074.104478] btrfs: Unknown symbol posix_acl_update_mode (err 0)\n[4638074.106514] fuse: Unknown symbol setattr_prepare (err 0)\n[4642774.136708] can: controller area network core (rev 20120528 abi 9)\n[4642774.136776] NET: Registered protocol family 29\n[4642774.138623] can: raw protocol (rev 20120528)\n[4642774.141861] NET: Registered protocol family 38\n[4642774.158706] sctp: Unknown symbol __sk_mem_reclaim_amount (err 0)\n[4642774.161229] sctp: Unknown symbol __sk_mem_reclaim_amount (err 0)\n[4642774.163613] sctp: Unknown symbol __sk_mem_reclaim_amount (err 0)\n[4642797.759643] can: broadcast manager protocol (rev 20120528 t)\n[4642797.781825] sha256_ssse3: Using AVX optimized SHA-256 implementation\n", 'Memory': {'Mem': {'total': '53595388', 'used': '49607204'}, 'Swap': {'total': '52428796', 'used': '91128'}}}
+2018-04-24 00:41:37	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 00:41:37	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 00:41:37	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 00:41:37	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 00:41:37	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 00:41:37	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 00:41:37	metrics.py	TempUser	Added uptime to report.
+2018-04-24 00:41:38	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 00:41:38	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 00:41:38	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 00:41:38	metrics.py	TempUser	Memory stats collected.
+2018-04-24 00:41:38	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 00:41:38	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 00:41:38	metrics.py	TempUser	Full report generated.
+2018-04-24 00:54:06	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 00:54:06	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 00:54:07	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 00:54:07	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 00:54:07	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 00:54:07	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 00:54:07	metrics.py	TempUser	Added uptime to report.
+2018-04-24 00:54:07	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 00:54:07	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 00:54:07	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 00:54:07	metrics.py	TempUser	Memory stats collected.
+2018-04-24 00:54:07	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 00:54:07	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 00:54:07	metrics.py	TempUser	Full report generated.
+2018-04-24 01:09:38	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:09:38	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:09:39	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:09:39	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:09:39	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:09:39	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:09:39	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:09:39	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:09:39	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:09:39	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:09:39	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:09:39	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:09:39	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:14:30	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:14:30	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:14:30	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:14:30	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:14:30	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:14:30	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:14:30	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:14:30	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:14:30	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:14:30	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:14:30	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:14:30	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:14:30	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:18:00	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:18:00	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:18:00	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:18:00	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:18:00	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:18:00	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:18:00	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:18:00	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:18:00	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:18:00	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:18:00	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:18:00	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:18:00	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:18:01	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:18:01	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:18:01	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:18:01	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:18:01	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:18:01	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:18:01	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:18:01	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:18:01	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:18:01	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:18:01	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:18:01	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:18:01	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:19:17	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:19:17	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:19:17	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:19:17	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:19:17	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:19:17	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:19:17	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:19:17	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:19:17	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:19:17	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:19:17	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:19:17	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:19:17	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:21:57	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:21:57	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:21:57	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:21:57	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:21:57	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:21:57	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:21:57	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:21:57	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:21:57	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:21:57	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:21:57	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:21:57	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:21:57	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:23:02	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:23:02	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:23:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:23:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:23:02	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:23:02	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:23:02	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:23:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:23:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:23:02	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:23:02	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:23:02	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:23:02	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:23:48	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:23:48	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:23:48	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:23:48	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:23:48	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:23:48	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:23:48	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:23:48	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:23:48	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:23:48	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:23:48	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:23:48	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:23:48	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:25:39	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:25:39	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:25:39	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:25:39	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:25:39	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:25:40	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:25:40	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:25:40	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:25:40	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:25:40	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:25:40	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:25:40	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:25:40	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.
+2018-04-24 01:25:53	metrics.py	TempUser	Began collecting metrics: ./metrics.py
+2018-04-24 01:25:53	metrics.py	TempUser	OS took command, but there was an issue: sensors -u.
+2018-04-24 01:25:53	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-04-24 01:25:53	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-sensors.txt.
+2018-04-24 01:25:53	metrics.py	TempUser	Sensors parsed and added to report.
+2018-04-24 01:25:53	metrics.py	TempUser	Successfully ran uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-04-24 01:25:53	metrics.py	TempUser	Added uptime to report.
+2018-04-24 01:25:53	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-04-24 01:25:53	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-dmesg.txt.
+2018-04-24 01:25:53	metrics.py	TempUser	Successfully ran free -o.
+2018-04-24 01:25:53	metrics.py	TempUser	Memory stats collected.
+2018-04-24 01:25:53	metrics.py	TempUser	Successfully ran cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-04-24 01:25:53	metrics.py	TempUser	Demo Mode: Demo metrics pulled from sample-lsblk.txt.

@@ -23,10 +23,11 @@ class Logger():
             os.makedirs(self.path)
 
     # add event to whm.log
-    def write(self, event, mode="a", force=False):
+    def write(self, eventin, mode="a", force=False):
         if not force:
             self.checkSize()
 
+        event = eventin.replace("\n", "{NL}")   # removes newline chars from log entries
         timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
         # attempt write file operation

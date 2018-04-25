@@ -120,14 +120,161 @@ def main():
         exit(0)
 
     # pull and report uptime (works on virts)
-    (report['uptime'], uptimeRC) = toOS("uptime -p | cut -c 4- | tr -d '\n'")
+    (report['uptime'], _) = toOS("uptime -p | cut -c 4- | tr -d '\n'")
+    logger.write("Added uptime to report.")
 
+    # pull and report dmesg (virts us sample output)
+    if not globe["demo"]:
+        (report['dmesg'], _) = toOS("dmesg | tail -n 200")
+        logger.write("Added dmesg to report.")
+    else:
+        (report['dmesg'], _) = toOS("cat " + os.path.join(path, "samples/sample-dmesg.txt"))
+        logger.write("Demo Mode: Demo metrics pulled from sample-dmesg.txt.")
+
+    # pull and report memory stats (works on virts)
+    (freeOut, _) = toOS("free -o")
+    i = 0
+    freeOutLen = len(freeOut)
+
+    # skip first line of output
+    while ord(freeOut[i]) != 10:
+        i += 1
+    i += 1
+
+    # scan over freeOut and identify data point to save in report
+    report["Memory"] = {}
+    while i < freeOutLen:
+        # get name
+        name = ""
+        while freeOut[i] != ":":
+            name += freeOut[i]
+            i += 1
+        i += 1
+
+        # get total
+        total = ""
+        while freeOut[i] == " ":
+            i += 1
+        while freeOut[i] != " ":
+            total += freeOut[i]
+            i += 1
+
+        # get used
+        used = ""
+        while freeOut[i] == " ":
+            i += 1
+        while freeOut[i] != " ":
+            used += freeOut[i]
+            i += 1
+
+        # save data
+        report["Memory"][name] = {
+            "total": total,
+            "used": used
+        }
+
+        # burn through rest of line
+        while ord(freeOut[i]) != 10:
+            i += 1
+        i += 1
+
+    logger.write('Memory stats collected.')
+
+    # pull and report storage status (demo mode uses sample output)
+    if not globe["demo"]:
+        (lsblkOut, _) = toOS("lsblk | tail -n +2")
+        logger.write("Pulling pysical drive info.")
+    else:
+        (lsblkOut, _) = toOS("cat " + os.path.join(path, "samples/sample-lsblk.txt"))
+        logger.write("Demo Mode: Demo metrics pulled from sample-lsblk.txt.")
+
+    # extract data from output
+    i = 0                   # i is index in output
+    heritage = []
+    lsblkOutLen = len(lsblkOut)
+    report["drives"] = {}
+    while i < lsblkOutLen:
+        j = 0               # j tracks the nexted position of device name
+        while ord(lsblkOut[i]) != 10:
+            while not (97 <= ord(lsblkOut[i]) <= 122 or 48 <= ord(lsblkOut[i]) <= 57):
+                i += 1
+                j += .5
+            name = ""
+            while 97 <= ord(lsblkOut[i]) <= 122 or 48 <= ord(lsblkOut[i]) <= 57:
+                name += lsblkOut[i]
+                i += 1
+            for x in range(2):
+                while lsblkOut[i] == " ":
+                    i += 1
+                while lsblkOut[i] != " ":
+                    i += 1
+            while lsblkOut[i] == " ":
+                i += 1
+            size = ""
+            while lsblkOut[i] != " ":
+                size += lsblkOut[i]
+                i += 1
+            while lsblkOut[i] == " ":
+                i += 1
+            while lsblkOut[i] != " ":
+                i += 1
+            while lsblkOut[i] == " ":
+                i += 1
+            dtype = ""
+            while not ord(lsblkOut[i]) in [10, 32]:
+                dtype += lsblkOut[i]
+                i += 1
+            while lsblkOut[i] == " " and ord(lsblkOut[i]) != 10:
+                i += 1
+            mount = ""
+            while ord(lsblkOut[i]) != 10:
+                mount += lsblkOut[i]
+                i += 1
+
+            if j == 0:
+                # root element
+                heritage = [[name, j]]
+            elif j == heritage[len(heritage) - 1][1] + 1:
+                # child of last element
+                heritage.append([name, j])
+            elif j < heritage[len(heritage) - 1][1]:
+                # this is an aunt, but not a root
+                heritage = heritage[:j - 1]
+            else:
+                # sibling
+                heritage.pop().append([name, j])
+
+            # add info to report
+            if j == 0:
+                report["drives"][name] = {
+                    "size": size,
+                    "type": dtype
+                }
+                if len(mount) > 0:
+                    report["drives"][name]["mount"] = mount
+            if j > 0:
+                parent = report["drives"]
+                herLen = len(heritage)
+                for device in heritage:
+                    if device[0] != heritage[herLen - 1][0]:
+                        parent = parent[device[0]]
+                if not "children" in parent:
+                    parent["children"] = {}
+                parent["children"][name] = {
+                    "size": size,
+                    "type": dtype
+                }
+
+            print(name + ", " + str(j) + ", " + size + ", " + dtype + ", " + mount + " - heritage: " + str(heritage))
+            print(report["drives"])
+        i += 1
 
     # fruther metrics gathering
 
-
-    logger.write(str(report))
+    print(report["drives"])
     logger.write('Full report generated.')
+
+    #logger.write(str(report))
 
 
 def toOS(command):
