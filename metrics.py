@@ -7,6 +7,7 @@
     Dependancies:
         python3.5 or higher
         lm-sensors
+        smartmontools
 """
 
 import subprocess
@@ -28,6 +29,13 @@ def main(full_report):
 
     logger.write('Began collecting metrics: ' + ' '.join(sys.argv[:]) + ' --------------')
 
+    # Ensure pythong version requirement
+    if sys.version_info < (3,5):
+        logger.write('Minimum required python version: 3.5')
+        logger.write('Python version detected: ' + str(sys.version_info[0]) + '.' + str(sys.version_info[1]))
+        print('Minimum python requirement is not met. See whm.log.')
+        exit(1)
+
     # If this is running from the command line
     if "metrics.py" in sys.argv[0]:
         globe["command_line"] = True
@@ -38,7 +46,7 @@ def main(full_report):
         elif len(sys.argv) != 1:
             print("Use no argument for a full report or use 'update' for a partial report.")
             logger.write('Unexprected parameters - Did not collect metrics.')
-            exit(1)
+            exit(2)
 
     # Check if demo mode should be used.
     if iAmAVirt():
@@ -72,7 +80,7 @@ def iAmAVirt():
     (sensorsOut, sensorsRC) = toOS("sensors -u")
     if sensorsOut == "failed":
         logger.write("Exiting - iAmAVirt()")
-        exit(2)
+        exit(3)
 
     # If sensors executed but returned an error
     # This signifies 'demo' mode should be used and fake metrics will be used to demonstrate program functionality
@@ -405,6 +413,10 @@ def loadVarious():
         (report['dmesg'], dmesgrc) = toOS("dmesg | tail -n 200")
     else:
         (report['dmesg'], dmesgrc) = toOS("cat " + os.path.join(path, "samples/sample-dmesg.txt"))
+
+    # Load, but do not process network error info.
+    # I am intentionally leaving this part of the report vague and unprocess for security reasons.
+    (report["network"], networkrc) = toOS("ifconfig eth0 | tail -n +4")
 
     # Check for errors
     if uprc != 0 or unamerc != 0 or dmesgrc != 0:
