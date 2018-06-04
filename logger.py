@@ -24,7 +24,7 @@ class Logger():
 
     # add event to whm.log
     def write(self, eventin, mode="a", force=False):
-        if not force:
+        if not force and os.path.isfile(os.path.join(self.path, "whm.log")):
             self.checkSize()
 
         event = eventin.replace("\n", "{NL}")   # removes newline chars from log entries
