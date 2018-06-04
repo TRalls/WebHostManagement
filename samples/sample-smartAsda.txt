@@ -1,0 +1,18 @@
+  1 Raw_Read_Error_Rate     0x000b   100   100   050    Pre-fail  Always       -       0/0
+  5 Retired_Block_Count     0x0013   100   100   050    Pre-fail  Always       -       1
+  9 Power_On_Hours_and_Msec 0x0012   100   100   000    Old_age   Always       -       7279h+00m+00.000s
+ 12 Power_Cycle_Count       0x0012   100   100   000    Old_age   Always       -       26
+162 Unknown_Attribute       0x0003   077   077   000    Pre-fail  Always       -       96
+170 Reserve_Block_Count     0x0002   100   100   000    Old_age   Always       -       87
+172 Erase_Fail_Count        0x0012   100   100   000    Old_age   Always       -       0
+173 Unknown_Attribute       0x0000   100   100   000    Old_age   Offline      -       4613803
+174 Unexpect_Power_Loss_Ct  0x0012   100   100   000    Old_age   Always       -       3
+181 Program_Fail_Count      0x0012   100   100   000    Old_age   Always       -       1
+187 Reported_Uncorrect      0x0012   100   100   000    Old_age   Always       -       0
+192 Power-Off_Retract_Count 0x0012   100   100   000    Old_age   Always       -       3
+194 Temperature_Celsius     0x0023   070   070   000    Pre-fail  Always       -       30
+196 Reallocated_Event_Count 0x0000   100   100   000    Old_age   Offline      -       1
+218 Unknown_Attribute       0x0000   100   100   000    Old_age   Offline      -       0
+231 SSD_Life_Left           0x0013   100   100   000    Pre-fail  Always       -       97
+241 Lifetime_Writes_GiB     0x0012   100   100   000    Old_age   Always       -       417
+242 Lifetime_Reads_GiB      0x0012   100   100   000    Old_age   Always       -       39
