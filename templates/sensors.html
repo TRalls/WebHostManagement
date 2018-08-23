@@ -1,0 +1,24 @@
+<!--
+    Provides additional framework for presentation of sensor information.
+    scripts.js uses sensors_charts div to built this page out fruther.
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Sensors
+{% endblock %}
+
+{% block main %}
+    <div class="boxed-div">
+        <h1>Sensors Statistics</h1>
+        <p>
+            <i>TODO Info about sensors stats</i>
+        </p>
+    </div>
+    <div id="sensors_charts">
+        <!-- JS will build this out. -->
+    </div>
+{% endblock %}

@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 
+<!--
+    Parent html document for all webpages in WHM. All other html docs extend this one.
+    Flask is used to serve this document dynamically based on a few variables.
+    Bootstrap is also used to for a reactive experience.
+
+    See README.txt for more info on WHM.
+-->
+
 <html lang="en">
 
     <head>
@@ -7,7 +15,7 @@
         <meta charset="utf-8"/>
         <meta content="initial-scale=1, width=device-width" name="viewport"/>
 
-        <!-- http://getbootstrap.com/ -->
+        <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
         <!-- App's own CSS -->
@@ -16,18 +24,80 @@
         <!-- http://jquery.com/ -->
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-        <!-- http://getbootstrap.com/ -->
+        <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <!-- app's own JavaScript -->
+        <!-- Charts - http://www.chartjs.org -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+
+        <!-- App's own JavaScript -->
         <script src="/static/scripts.js"></script>
+        <script type="text/javascript">
+            // Flask variables effecting UI.
+            var admin = '{{ session.admin }}';
+            var user_id = '{{ session.user_id }}';
+        </script>
 
         <title>Web Host Manager: {% block title %}{% endblock %}</title>
     </head>
     <body>
+        <div id='demo_banner'>
+            <span>Demo Mode</span>
+        </div>
+        <!-- Header functionality adapted from CS50 and Bootstrap docs. -->
         <div class="container">
             <nav class="navbar navbar-default">
-                <span>Nav Bar</span>
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class='navbar-brand' href="/">WHM</a>
+                    </div>
+
+                    {% if session.user_id %}
+                        <!-- Header UI for logged in users. -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a id="username" class="dropdown-toggle" data-toggle="dropdown" href="#">{{ session.username }}<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                                </ul>
+
+                            <li><a href="#"><img id='refresh' alt='pull fresh report info' src='/static/assets/refresh.png'/></a></li>
+
+                        </ul>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="{{ url_for('sensors') }}">Sensors</a></li>
+                                <li><a href="{{ url_for('memory') }}">Memory</a></li>
+                                <li><a href="{{ url_for('cpu') }}">CPU</a></li>
+                                <li><a href="{{ url_for('storage') }}">Storage</a></li>
+                                <li><a href="{{ url_for('processes') }}">Processes</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{{ url_for('network') }}">Network</a></li>
+                                        <li><a href="{{ url_for('logs') }}">Logs</a></li>
+                                        <li><a href="{{ url_for('settings') }}">Settings</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    {% else %}
+                        <!-- Header menu for non-logged in users -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="{{ url_for('login') }}">Login</a></li>
+                            <li><a href="{{ url_for('register') }}">Register</a></li>
+                        </ul>
+                    {% endif %}
+                </div>
             </nav>
             <main>
                 {% block main %}{% endblock %}

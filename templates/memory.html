@@ -1,0 +1,24 @@
+<!--
+    Provides additional framework for presentation of memory information.
+    scripts.js uses memory_charts div to built this page out fruther.
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Memory
+{% endblock %}
+
+{% block main %}
+    <div class="boxed-div">
+        <h1>Memory Statistics</h1>
+        <p>
+            <i>TODO Info about mem stats</i>
+        </p>
+    </div>
+    <div id="memory_charts">
+        <!-- JS will build this out. -->
+    </div>
+{% endblock %}

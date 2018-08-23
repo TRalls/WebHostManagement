@@ -1,0 +1,37 @@
+<!--
+    Displays running processes and allows admins to take action on them.
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Processes
+{% endblock %}
+
+{% block main %}
+    <div id="processes_div" class="boxed-div">
+        <h1>
+            Processes
+        </h1>
+        <p>
+            <i>The below table lists running processes at the time of reporting. Note, some of these processes support this
+            application and were initiated in order to pull system metrics. Some of these processes may no longer be running.</i>
+        </p>
+        <p style="color: red;" class='admin rules'>
+            *Please take care when manipulating processes from this interface. Access to this application is dependant on some
+            of these processes.
+        </p>
+        <!-- Action column is hidden from non-admins. Lines are added by JS -->
+        <table id="processes_table">
+            <tr>
+                <th>PID</th>
+                <th>TTY</th>
+                <th>Time</th>
+                <th>CMD</th>
+                <th class="admin">Action</th>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!--
+    Displays log information.
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Logs
+{% endblock %}
+
+{% block main %}
+    <div id="dmesg_logs" class="boxed-div">
+        <h1>Host Logs</h1>
+        <pre class="logs"><samp>
+            <!-- dmesg logs go here. -->
+        </samp></pre>
+    </div>
+
+    <!-- User logs viewable by admins only. -->
+    <div id="whm_logs" class="boxed-div admin">
+        <h1>WHM Usage Logs</h1>
+        <p>
+            <i>whm.log is the most current log. Archived logs are available in the dropdown list. Customize log behavior
+            in <a href="settings#log_config">Log Settings</a>.</i>
+        </p>
+        <strong>Currently displayed: <span id='logname'>whm.log</span></strong>
+        <div id="logname_form">
+            <select id='lognames' class="form-control">
+                <!-- Options filled in by JS. -->
+            </select>
+            <button class='btn btn-default' id="lognames_btn">View</button>
+        </div>
+        <pre class="logs"><samp>
+            <!-- WHM usage logs go here if user is an admin. -->
+        </samp></pre>
+    </div>
+{% endblock %}

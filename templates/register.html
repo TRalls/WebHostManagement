@@ -1,0 +1,62 @@
+<!--
+    Interface for requesting access as a new user.
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <div class="boxed-div">
+        <h1>
+            Request Access
+        </h1>
+        <p>
+            Sumbit your registration information to request access to this system. If a system admin accepts your request, you
+            will have immediate access to this interface. To expedite, you may consider contacting your admin following the
+            submission of your request. Expect to be contacted with the information provided if the admin determines verification
+            is neccessary.
+        </p>
+        <p class="rules">
+            *All fields are required. Use only alphanumerics plus '.' and '@'. Exception: Passwords may contain special characters.
+        </p>
+        <!-- Form rules are enforced here and on the server. -->
+        <form id="request_register_form" action="register" method="POST">
+            <fieldset>
+                <div class="form-group">
+                    <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" pattern="[a-zA-Z0-9@.]+" required/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="password" placeholder="Create Password" type="password" required/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="vpassword" placeholder="Verify Password" type="password" required/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="first" placeholder="First Name" type="text" pattern="[a-zA-Z0-9@.]+" required/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="last" placeholder="Last Name" type="text" pattern="[a-zA-Z0-9@.]+" required/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="email" placeholder="Email Address" type="text" pattern="[a-zA-Z0-9@.]+" required/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="phone" placeholder="Phone Number" type="text" pattern="[a-zA-Z0-9@.]+" required/>
+                </div>
+                <p>
+                    *By submitting this request, you acknowledge that all actions on this tool and provided data are subject
+                    to logging and may be viewable by system admins. Note: passwords are not viewable through this tool and are
+                    stored in an encrypted state.
+                </p>
+                <div class="form-group">
+                    <button class="btn btn-default" type="submit">Request Registration</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

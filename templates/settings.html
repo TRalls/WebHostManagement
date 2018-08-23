@@ -1,0 +1,320 @@
+<!--
+    This is the hub for changing account information, user management, and config settings.
+    Appearance of some elements is dependent on user privilege.
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+    <!--
+        All users can update their information. Current information is supplied by flask. Input validation is done here to prevent
+        unproductive traffic. Compliance is ensured on the server side in case the below is bypassed.
+    -->
+    <div class="boxed-div">
+        <h1>
+            Account Information
+        </h1>
+        <p>
+            <i>If any information here is out of date, you can update it by entering new values here. Only enter values in
+            fields that need to be updated. Blank fields will remain unchanged. If you are changing your password, all password
+            fields are required. Contact an admin to learn more about privilege levels or if you think your privilege level should
+            be adjusted.</i>
+        </p>
+        <form id="update_info" action="settings" method="POST">
+            <table class="update_info_table">
+                <tr class="tr_buffer"></tr>
+                <tr>
+                    <td>Username:</td>
+                    <td>{{ session.username }}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Privilege:</td>
+                    <td id="priv">Standard</td>
+                    <td></td>
+                </tr>
+                <tr class="tr_buffer"></tr>
+                <tr>
+                    <td>Change Password:</td>
+                    <td></td>
+                    <td>
+                        <input class="form-control" name="password" placeholder="Current Password" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input class="form-control" name="npassword" placeholder="New Password" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input class="form-control" name="vpassword" placeholder="Verify Password" type="password"/>
+                    </td>
+                </tr>
+                <tr class="tr_buffer"></tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td>{{ session.first }}</td>
+                    <td>
+                        <input class="form-control" name="first" placeholder="New First Name" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td>{{ session.last }}</td>
+                    <td>
+                        <input class="form-control" name="last" placeholder="New Last Name" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email Address:</td>
+                    <td>{{ session.email }}</td>
+                    <td>
+                        <input class="form-control" name="email" placeholder="New Email Address" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td>{{ session.phone }}</td>
+                    <td>
+                        <input class="form-control" name="phone" placeholder="New Phone Number" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                    </td>
+                </tr>
+                <tr class="tr_buffer"></tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="hidden" name="action" value="update"/>
+                        <button class="btn btn-default" type="submit">Update</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!-- This section should only be visible to admins. -->
+    <div id="admin-settings" class="admin">
+        <!-- Manage other users. -->
+        <div class="boxed-div">
+            <h1>
+                Manage Users
+            </h1>
+            <p style="color: red;"><i>*All actions are final. There is no confirmation before actions are exceuted.</i></p>
+            <h3>
+                Registration Requests
+            </h3>
+            <table class="border-table" id="requests_table">
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+                <!-- Table built out fruther by JS. -->
+            </table>
+            <h3>
+                Current Users
+            </h3>
+            <p><i>Actions are not available for the currently logged in user. If needed, have another admin take action or use users.py.</i></p>
+            <table class="border-table" id="users_table">
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Admin</th>
+                    <th>Action</th>
+                </tr>
+                <!-- Table built out fruther by JS. -->
+            </table>
+        </div>
+
+        <!-- Appears if a current user is selected in the tables above. -->
+        <div id="update-other-user" class="boxed-div">
+            <span id="close-other-user">Close</span>
+            <h1>
+                Manage This User
+            </h1>
+            <p>
+                <i>As an admin, you can use the below to change account information for this user.</i>
+            </p>
+            <!-- Form entry rules are enforced here and on server. -->
+            <form id="update_other_info" action="settings" method="POST">
+                <table class="update_info_table">
+                    <!-- Some cells are left blank, and some are filled by JS. -->
+                    <tr class="tr_buffer"></tr>
+                    <tr>
+                        <td>Username:</td>
+                        <td id="other_username"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Privilege:</td>
+                        <td id="other_priv"></td>
+                        <td></td>
+                    </tr>
+                    <tr class="tr_buffer"></tr>
+                    <tr>
+                        <td>Change Password:</td>
+                        <td></td>
+                        <td>
+                            <input class="form-control" name="npassword" placeholder="New Password" type="password"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input class="form-control" name="vpassword" placeholder="Verify Password" type="password"/>
+                        </td>
+                    </tr>
+                    <tr class="tr_buffer"></tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td id="other_first"></td>
+                        <td>
+                            <input class="form-control" name="first" placeholder="New First Name" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td id="other_last"></td>
+                        <td>
+                            <input class="form-control" name="last" placeholder="New Last Name" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email Address:</td>
+                        <td id="other_email"></td>
+                        <td>
+                            <input class="form-control" name="email" placeholder="New Email Address" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td id="other_phone"></td>
+                        <td>
+                            <input class="form-control" name="phone" placeholder="New Phone Number" type="text" pattern="[a-zA-Z0-9@.]+"/>
+                        </td>
+                    </tr>
+                    <tr class="tr_buffer"></tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <!-- Hidden variable for server request. -->
+                            <input type="hidden" name="action" value="other_update"/>
+                            <button class="btn btn-default" type="submit">Update</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!-- Configuration settings. -->
+        <div id="log_config" class="boxed-div">
+            <h1>
+                WHM Log Configuration
+            </h1>
+            <p>
+                <i>WHM logs record events handled by WHM and its users. The purpose of these logs is to hold users accountable and
+                can be used to diagnose issues with this tool. Adjust the below values to change how future events are logged and how
+                future archives behave.</i>
+            </p>
+            <!-- Form rules are enforced here and on server -->
+            <form id="set_log_config" action="settings" method="POST">
+                <!-- Currect setting values show as loading until JS changes them -->
+                <ul id="log_config_list">
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>Maximum Log File Size</strong>
+                            </li>
+                            <li>
+                                <p>To ensure prompt log functionality, the active log is kept below a certain size. Once a log size in bytes
+                                reaches this value, it is archived and a new log is started. A value of 145000 will store about 1000 logged
+                                lines. <br /><span class='rules'>Enter a whole number between 5000 and 1 billion.</span></p>
+                            </li>
+                            <li>
+                                Size:<span id="max_size_value" class="log_value">loading...</span>
+                                <input class="form-control" name="max_size" placeholder="Maximum Size" type="number" min="5000" max="1000000000" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>Maximum Archive Age</strong>
+                            </li>
+                            <li>
+                                <p>To prevent logs from endlessly consuming storage space, archives will be deleted at this age.
+                                <br /><span class='rules'>Enter a non-negative whole number and select a given time measurement.</span></p>
+                            </li>
+                            <li>
+                                Age:<span id="max_age_value" class="log_value">loading...</span>
+                                <input class="form-control" name="max_age_n" placeholder="Maximum Age" type="number" min="0" />
+                                <select id="max_age_unit" class="form-control" name="max_age_unit">
+                                    <option value="minutes">Minutes</option>
+                                    <option value="hours">Hours</option>
+                                    <option value="days">Days</option>
+                                    <option value="weeks">Weeks</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>User Length</strong>
+                            </li>
+                            <li>
+                                <p>To make logs easy to read, details of events are lined up in columns. How many characters should the user
+                                column use? If a user name is longer than this value, the end of it will be cut off to fit in this column.
+                                <br /><span class='rules'>Enter a whole number between 0 and 50.</span></p>
+                            </li>
+                            <li>
+                                Length:<span id="usr_len_value" class="log_value">loading...</span>
+                                <input class="form-control" name="usr_len" placeholder="User Length" type="number" min="0" max="50" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>Source Length</strong>
+                            </li>
+                            <li>
+                                <p>Similar to User Length, this value specifies the width of the source column. Data in this column
+                                indicates what file is logging activity. <br /><span class='rules'>Enter a whole number between 0 and 50.
+                                </span></p>
+                            </li>
+                            <li>
+                                Length:<span id="src_len_value" class="log_value">loading...</span>
+                                <input class="form-control" name="src_len" placeholder="Source Length" type="number" min="0" max="50" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- Hidden variable for server request. -->
+                        <input type="hidden" id="default_flag" name="default_flag" value="0">
+                        <button class="btn btn-default" type="submit">Save</button>
+                        <button id="logs_to_default" class="btn btn-default" type="button">Restore Defaults</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+{% endblock %}

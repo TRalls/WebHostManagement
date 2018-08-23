@@ -1,0 +1,25 @@
+<!--
+    Diplays network statistics.
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Network
+{% endblock %}
+
+{% block main %}
+    <div id="network" class="boxed-div">
+        <h1>Network Information</h1>
+        <p>
+            <i>Here is information from eth0. In this version of WHM, identifying information is left out. Future versions may allow
+            for more diagnostic information in this section. But for now, this page is best used for identifying if there are any
+            interface errors.</i>
+        </p>
+        <pre><samp>
+            <!-- Network data goes here. -->
+        </samp></pre>
+    </div>
+{% endblock %}

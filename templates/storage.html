@@ -1,0 +1,23 @@
+<!--
+    TODO
+
+    This doc is used with flask to extend layout.html.
+-->
+{% extends "layout.html" %}
+
+{% block title %}
+    Storage
+{% endblock %}
+
+{% block main %}
+    <!-- Temporary interface while WIP -->
+    <div class="boxed-div">
+        <h1>Drives</h1>
+        <pre id='drives'></pre>
+    </div>
+
+    <div class="boxed-div">
+        <h1>Logical Drives</h1>
+        <pre id='ld'></pre>
+    </div>
+{% endblock %}

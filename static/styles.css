@@ -1,0 +1,174 @@
+body {
+    background-color: gray;
+}
+
+.navbar {
+    background-color: lightgreen;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: black!important;
+}
+
+#refresh {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.boxed-div
+{
+    border-style: solid;
+    border-color: #aaaaaa;
+    border-width: 1px;
+    background-color: #fbfbfb;
+    margin-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.rules {
+    color: red;
+    font-size: small;
+}
+
+table {
+    width: 100%;
+}
+
+.border-table tr th, .border-table tr td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+select {
+    width: auto !important;
+    display: inline !important;
+}
+
+.update_info_table {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.tr_buffer {
+    height: 20px;
+}
+
+#update-other-user {
+    display: none;
+}
+
+#close-other-user {
+    float: right;
+    font-size: 12px;
+    position: relative;
+    left: 8%;
+    top: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+#log_config_list li ul li input {
+    width: auto !important;
+    display: inline !important;
+}
+
+#log_config_list, #log_config_list li ul {
+    list-style-type: none;
+}
+
+#log_config_list > li {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.log_value {
+    color: blue;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+#demo_banner {
+    width: 100%;
+    text-align: center;
+    background-color: orange;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+.admin {
+    display: none;
+}
+
+pre.logs {
+    height: 500px;
+    width: 100%;
+}
+
+#logname_form {
+    float: right;
+    padding-bottom: 5px;
+}
+
+#processes_table tr th, #processes_table tr td {
+    border: 1px solid black;
+}
+
+button {
+    margin: 2px;
+}
+
+.chart_form div {
+    padding: 0px 20px 5px 0px;
+    display: inline-block;
+}
+
+.chart_form div input {
+    margin-right: 5px;
+}
+
+.chart_info {
+    background-color: #ebebeb;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.boxed-box {
+    display: inline-block;
+}
+
+.current_table_div {
+    float: right;
+    width: 50%;
+}
+
+.current_chart_cont {
+    width: 50%;
+}
+
+.current_table tr {
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 0px 0px 1px 0px;
+}
+
+#no_chart {
+    display: none;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.chart_title {
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px;
+}
+

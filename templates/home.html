@@ -1,0 +1,27 @@
+<!--
+    Home Page
+
+    TODO - Consider including:
+    Host name
+    OS
+    Uptime
+
+    Tasks
+        restart
+        add users? or on settings page?
+
+    This doc is used with flask to extend layout.html.
+-->
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <!-- Temporary interface while WIP -->
+    <div class="boxed-div">
+        <pre id='uptime'></pre>
+        <pre id='home-report'></pre>
+    </div>
+{% endblock %}
