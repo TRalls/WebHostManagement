@@ -31,7 +31,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 
-
         <!-- App's own JavaScript -->
         <script src="/static/scripts.js"></script>
         <script type="text/javascript">
@@ -62,13 +61,18 @@
 
                     {% if session.user_id %}
                         <!-- Header UI for logged in users. -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav navbar-left">
                             <li class="dropdown">
                                 <a id="username" class="dropdown-toggle" data-toggle="dropdown" href="#">{{ session.username }}<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
                                 </ul>
 
+                            <!--
+                                refresh.png license info:
+                                    https://www.iconfinder.com/icons/134221/arrow_refresh_reload_repeat_sync_update_icon
+                                    License Creative Commons
+                            -->
                             <li><a href="#"><img id='refresh' alt='pull fresh report info' src='/static/assets/refresh.png'/></a></li>
 
                         </ul>
@@ -85,6 +89,7 @@
                                         <li><a href="{{ url_for('network') }}">Network</a></li>
                                         <li><a href="{{ url_for('logs') }}">Logs</a></li>
                                         <li><a href="{{ url_for('settings') }}">Settings</a></li>
+                                        <li><a href="https://github.com/TRalls/WebHostManagement/blob/master/README.txt">About</a></li>
                                     </ul>
                                 </li>
 

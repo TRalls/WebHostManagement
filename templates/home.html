@@ -1,14 +1,8 @@
 <!--
-    Home Page
-
-    TODO - Consider including:
-    Host name
-    OS
-    Uptime
-
-    Tasks
-        restart
-        add users? or on settings page?
+    Home page for the app after logging in. Some basic info about the host
+    and the application is on this page, including an explanation of demo
+    mode if it is in use. There will also be a button to allow admins to
+    reboot the host.
 
     This doc is used with flask to extend layout.html.
 -->
@@ -19,9 +13,84 @@
 {% endblock %}
 
 {% block main %}
-    <!-- Temporary interface while WIP -->
     <div class="boxed-div">
-        <pre id='uptime'></pre>
-        <pre id='home-report'></pre>
+        <h1>Welcome to WHM</h1>
+        <table>
+            <tr>
+                <td id="host_info">
+                    <h3>Host Info</h3>
+                    <table>
+                        <tr>
+                            <td>Hostname:</td>
+                            <td id='hostname'></td>
+                        </tr>
+                        <tr>
+                            <td>Uptime:</td>
+                            <td id='uptime'></td>
+                        </tr>
+                        <tr>
+                            <td>OS:</td>
+                            <td id='os'></td>
+                        </tr>
+                        <tr class='admin'>
+                            <td>Action:</td>
+                            <td>
+                                <button id='restart_host' class='btn btn-default restart_btn'>Restart</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="demo_desc">
+                        <h3>Demo Mode</h3>
+                        <p>
+                            It appears that this application is running on a virtual or cloud-based system, as it lacks physical sensors.
+                            This application is intended to be ran on a physical server. Some of the data processed by WHM is not
+                            applicable or it's not available in the same way as it would be on a physical server. In these cases, sample
+                            data is processed in the same way as genuine information. This allows for testing and demonstration of all
+                            functionality.
+                        </p>
+                        <p>
+                            Sample data is used for the following:
+                        </p>
+                        <ul>
+                            <li>Sensors</li>
+                            <li>Storage</li>
+                            <li>Host Logs</li>
+                        </ul>
+                        <p>
+                            Also, the "Restart" button above might not actually restart the system.
+                        </p>
+                    </div>
+                </td>
+                <td id="whm_info">
+                    <h3>Web Host Manager</h3>
+                    <p>
+                        WHM is a one stop shop for checking up on your server. Forget setting aside time to ssh into your server and
+                        google-ing diagnostic commands for the nth time to ensure your system is still healthy. WHM runs and tracks your
+                        diagnostics for you so you can check your stats at a glance and get back to what's important.
+                    </p>
+                    <p id='admin_desc' class='admin'>
+                        You are registered as an admin. You are able to view all available information, make change WHM settings, excecute
+                        simple tasks on the system, and manage users.
+                    </p>
+                    <p id='no_admin_desc'>
+                        You are registered as a standard user. You will be able to see all diagnostic information, but some other features
+                        will not be available. Contact an admin if you need more access.
+                    </p>
+                    <p>
+                        Current diagnostic information is loaded when you log in. It can be viewed from the tabs on the navigation bar.
+                        Click the refresh button on the navigation bar to re-run diagnostics and display updated information.
+                    </p>
+                    <p>
+                        The logout button is located under your user name on the navigation bar.
+                    </p>
+                    <p>
+                        This application was prompted by and developed with resourced provided by <a href="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/">
+                        CS50 through edX</a>. For more infomation about this project, visit "About" from the navigation bar menu which links to the README.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <span id='full_report_btn' class='toggle'>Show Raw Report</span>
+        <pre id='full_report'></pre>
     </div>
 {% endblock %}

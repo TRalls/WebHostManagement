@@ -10,14 +10,32 @@
 {% endblock %}
 
 {% block main %}
-    <!-- Temporary interface while WIP -->
     <div class="boxed-div">
-        <h1>Drives</h1>
-        <pre id='drives'></pre>
+        <h1>Storage Statistics</h1>
+        <p>
+            <i>This page displays the <a href="#physical_drives_cont">physical</a> and <a href="#logical_drives_cont">logical</a>
+            drive setup on this host. Diagnostic and utilization information can also be found here.</i>
+        </p>
     </div>
 
-    <div class="boxed-div">
-        <h1>Logical Drives</h1>
-        <pre id='ld'></pre>
+    <div id="physical_drives_cont" class="boxed-div">
+        <h2>Physical Drive Health and Partitions</h2>
+        <p>
+            Each physical drive is listed below. Basic details, partition information, and SMART values are listed with each drive.
+            The partition chart shows a visualization of how the physical drive is broken down. This infomation on this chart
+            is in Gigabytes. For information about the data listed under SMART Values, visit <a href="https://www.smartmontools.org/wiki/TocDoc">
+            Smartmontools Documentation</a>.
+        </p>
+        <div id='physical_drives'></div>
+    </div>
+
+    <div id="logical_drives_cont" class="boxed-div">
+        <h2>Logical Drive Utilization</h2>
+        <p>
+            Each logical drive is listed below with its utilization information. Details are in gigabytes and the values on the
+            charts are in kilobytes. Note that all '/' characters on the Utilization History chart are displayed as '_'. For more
+            information on where this data comes from see <a href="http://linuxcommand.org/lc3_man_pages/df1.html">df documentation</a>.
+        </p>
+        <div id='logical_drives'></div>
     </div>
 {% endblock %}

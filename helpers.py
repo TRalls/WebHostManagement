@@ -7,10 +7,14 @@
 
 from flask import redirect, render_template, request, session
 from functools import wraps
+from time import strftime
+from datetime import datetime, timedelta
 import sqlite3
 import configparser
-import time
 import metrics
+
+# Global variable to track record config vars.
+record_age_limits = {}
 
 """
     Decorate routes to require login.
@@ -30,15 +34,21 @@ def login_required(f):
     Stores current user info in session. This may need to run mid-session.
 """
 def update_session_vars():
-    # Although there is a function in users to get user info, separate code is used here since users imports helpers.
-    # TODO check for sql failure
-    user_line = to_sql('SELECT * FROM users WHERE "user_id" = "' + str(session["user_id"]) + '"', 'r', "whm.db")['details'][0]
+    # Check for SQL failure
+    sql_return = to_sql('SELECT * FROM users WHERE "user_id" = "' + str(session["user_id"]) + '"', 'r', "whm.db")
+    if not sql_return['success']:
+        return sql_return
+
+    # SQL was successful, update session vars and return
+    user_line = sql_return['details'][0]
     session["first"] = user_line[3]
     session["last"] = user_line[4]
     session["email"] = user_line[5]
     session["phone"] = user_line[6]
     session["admin"] = user_line[7]
-    return
+    return {
+        'success': True,
+    }
 
 """
     Takes a config filename as a parameter and returns dictionary of settings.
@@ -54,7 +64,11 @@ def get_config(file):
             'max_log_age_unit': config.get('logger', 'max_log_age_unit'),
             'max_log_age_n': config.get('logger', 'max_log_age_n'),
             'user_str_len': config.get('logger', 'user_str_len'),
-            'source_str_len': config.get('logger', 'source_str_len')
+            'source_str_len': config.get('logger', 'source_str_len'),
+            'hours_age_max': config.get('record', 'hours_age_max'),
+            'days_age_max': config.get('record', 'days_age_max'),
+            'weeks_age_max': config.get('record', 'weeks_age_max'),
+            'port_n': config.get('general', 'port_n')
         }
     except:
         # Failure - Return.
@@ -75,15 +89,21 @@ def record_metrics(scope):
     update = metrics.main(False, 'metrics-tracker')
 
     # Load a list of present charts in DB.
-    charts = [chart[0] for chart in to_sql('SELECT name FROM sqlite_master WHERE type = "table";', "r", "chart_data.db")]
+    charts = [chart[0] for chart in to_sql('SELECT name FROM sqlite_master WHERE type = "table";', "r", "chart_data.db")['details']]
 
-    # TODO keys=None?
+    # Used to convert hours, days, and weeks to hours.
+    hours_to_other = {
+        'hours': 1,
+        'days': 24,
+        'weeks': 168
+    }
+
     """
         Write data to DB. table_prefix and scope determine which table.
         table_prefix should look like "section_optionalSubSection_". Ex. "cpu_" or " mem_Swap_".
         table_prefix and data are both strings (data is CSV).
     """
-    def record(table_prefix, data, keys=None):
+    def record(table_prefix, data, keys):
         # Determine table to write to.
         table = table_prefix + "_" + scope
 
@@ -98,6 +118,11 @@ def record_metrics(scope):
 
         # Insert data into table.
         to_sql("INSERT INTO '" + table + "' VALUES (CURRENT_TIMESTAMP" + data + ");" , 'w', 'chart_data.db')
+
+        # Clean old entries
+        oldest_time = datetime.now() - timedelta(hours = int(record_age_limits[scope]) * hours_to_other[scope])
+        oldest_time_str = oldest_time.strftime('%Y-%m-%d %H:%M:%S')
+        to_sql('DELETE from "' + table + '" where time < strftime("%Y-%m-%d %H:%M:%S", "' + oldest_time_str + '")', 'w', 'chart_data.db')
 
     """
         Prepars data (a dictionary) to be entered into an SQL command.
@@ -133,11 +158,11 @@ def record_metrics(scope):
     record('cpu', cpu_update, keys)
 
     # Storage section.
-    # TODO
-
-
-    #TODO delete old entries from chart_data. This can be configured in cfg
-
+    processed_sto = {}
+    for ld in update['logical_volumes']:
+        processed_sto[ld['mount_point'].replace('/', '_')] = ld['use_percent'][:-1]
+    (sto_update, keys) = dict_to_sql_part(processed_sto)
+    record('sto', sto_update, keys)
 
 """
     Ensures strings are save for SQL entry.
@@ -194,3 +219,15 @@ def to_sql(command, mode, db):
             'success': False,
             'details': "SQL failed: " + command
         }
+
+"""
+    Loads current record config settings into record_age_limits.
+"""
+def load_record_conf():
+    global record_age_limits
+    config = get_config('whm.cfg')
+    record_age_limits = {
+        'hours': config['hours_age_max'],
+        'days': config['days_age_max'],
+        'weeks': config['weeks_age_max'],
+    }

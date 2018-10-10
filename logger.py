@@ -99,21 +99,27 @@ class Logger():
 
     """
         Copy whm.log to a backup named with date and time.
+        Pass name if filename was tried and already exists.
     """
-    def backup(self):
+    def backup(self, name=None):
         # Ensure whm.log existes.
         if not os.path.isfile(os.path.join(self.path, "whm.log")):
             return 1
 
         # Determine new filename and its path.
-        bak_name = 'whm_bak_' + datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S') + '.log'
-        bak_path = os.path.join(self.path, bak_name)
+        if name == None:
+            bak_name = 'whm_bak_' + datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S') + '.log'
+            bak_path = os.path.join(self.path, bak_name)
+        else:
+            # Tack an 'a' to the end of the filename and try again.
+            bak_name = name[:-4] + 'a.log'
+            bak_path = os.path.join(self.path, bak_name)
 
         # Ensure backup name doesn't already exist.
         # This may occure if this function is called more than once in the same second.
         if os.path.isfile(bak_path):
-            self.selfLogger.write('Tried to backup whm.log to ' + bak_name + ', but file already existed.')
-            return 2
+            # Try again with an 'a' appended to file name.
+            return self.backup(bak_name)
 
         # Attempt file operation to copy the current log to the new file.
         try:

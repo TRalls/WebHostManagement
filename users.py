@@ -6,7 +6,9 @@
     tools, end users will only have access to what those tools allow. Access to these
     functions should be handled with security in mind.
 
-    TODO explain request system - also should request function be here?
+    New users cannot completely register from the webapp. They can request access while
+    submitting their registration information. These requests can either be managed
+    by an admin from the webapp, or from a user of the command line version of this tool.
 """
 
 import sqlite3
@@ -70,7 +72,7 @@ def mainMenu():
     elif ans == "4":
         delete(-1)
     elif ans == "5":
-        newPassword(-1, "")
+        newPassword(-1)
     elif ans == "6":
         reviewRequests()
     elif ans == "7":

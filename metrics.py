@@ -385,9 +385,14 @@ def loadDrives():
         if not globe["demo"]:
             (smartHOut, smartrc) = toOS("smartctl -H /dev/" + device + " | grep result")
             (smartAOut, smartrc) = toOS("smartctl -A /dev/" + device + " | tail -n +8 | head -n -1")
+            (snOut, snrc) = toOS("smartctl -i /dev/" + device + " | grep 'Serial Number:' | cut -c19-")
+
         else:
             (smartHOut, smartrc) = toOS("cat " + os.path.join(path, "samples/sample-smart-H-PASSED.txt"))
             (smartAOut, smartrc) = toOS("cat " + os.path.join(path, "samples/sample-smartA" + device + ".txt"))
+            (snOut, snrc) = toOS("cat " + os.path.join(path, "samples/sample-sn.txt"))
+            # Make fake sn unique.
+            snOut =snOut[:-1] + device.upper()
 
             # Check for errors.
             if smartrc != 0:
@@ -396,6 +401,8 @@ def loadDrives():
 
         # Add overall health status to report.
         report["drives"][device]["smart_health"] = smartHOut[50:].replace("\n", "")
+        # Add sn info to report.
+        report["drives"][device]["sn"] = snOut
         # Parse output with headers/keys that apply to SMART attributes and report.
         report["drives"][device]["smart_attributes"] = parseLines(smartAOut, headers)
 
@@ -419,6 +426,9 @@ def loadProcesses():
     No special processing is needed for these outputs.
 """
 def loadVarious():
+    # Report hostname.
+    (report['hostname'], hnrc) = toOS("hostname | tr -d '\n'")
+
     # Report uptime (works on virts).
     (report['uptime'], uprc) = toOS("uptime -p | cut -c 4- | tr -d '\n'")
 

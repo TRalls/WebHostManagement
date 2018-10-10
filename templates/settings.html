@@ -224,7 +224,7 @@
             </form>
         </div>
 
-        <!-- Configuration settings. -->
+        <!-- Log Configuration settings. -->
         <div id="log_config" class="boxed-div">
             <h1>
                 WHM Log Configuration
@@ -235,9 +235,9 @@
                 future archives behave.</i>
             </p>
             <!-- Form rules are enforced here and on server -->
-            <form id="set_log_config" action="settings" method="POST">
+            <form id="set_log_config" class="set_config" action="settings" method="POST">
                 <!-- Currect setting values show as loading until JS changes them -->
-                <ul id="log_config_list">
+                <ul class="config_list">
                     <li>
                         <ul>
                             <li>
@@ -249,7 +249,7 @@
                                 lines. <br /><span class='rules'>Enter a whole number between 5000 and 1 billion.</span></p>
                             </li>
                             <li>
-                                Size:<span id="max_size_value" class="log_value">loading...</span>
+                                Size:<span id="max_size_value" class="config_value">loading...</span>
                                 <input class="form-control" name="max_size" placeholder="Maximum Size" type="number" min="5000" max="1000000000" />
                             </li>
                         </ul>
@@ -264,7 +264,7 @@
                                 <br /><span class='rules'>Enter a non-negative whole number and select a given time measurement.</span></p>
                             </li>
                             <li>
-                                Age:<span id="max_age_value" class="log_value">loading...</span>
+                                Age:<span id="max_age_value" class="config_value">loading...</span>
                                 <input class="form-control" name="max_age_n" placeholder="Maximum Age" type="number" min="0" />
                                 <select id="max_age_unit" class="form-control" name="max_age_unit">
                                     <option value="minutes">Minutes</option>
@@ -286,7 +286,7 @@
                                 <br /><span class='rules'>Enter a whole number between 0 and 50.</span></p>
                             </li>
                             <li>
-                                Length:<span id="usr_len_value" class="log_value">loading...</span>
+                                Length:<span id="usr_len_value" class="config_value">loading...</span>
                                 <input class="form-control" name="usr_len" placeholder="User Length" type="number" min="0" max="50" />
                             </li>
                         </ul>
@@ -302,16 +302,85 @@
                                 </span></p>
                             </li>
                             <li>
-                                Length:<span id="src_len_value" class="log_value">loading...</span>
+                                Length:<span id="src_len_value" class="config_value">loading...</span>
                                 <input class="form-control" name="src_len" placeholder="Source Length" type="number" min="0" max="50" />
                             </li>
                         </ul>
                     </li>
                     <li>
                         <!-- Hidden variable for server request. -->
-                        <input type="hidden" id="default_flag" name="default_flag" value="0">
+                        <input type="hidden" id="log_default_flag" name="log_default_flag" value="0" />
+                        <input type="hidden" id="section" name="section" value="log" />
+
                         <button class="btn btn-default" type="submit">Save</button>
                         <button id="logs_to_default" class="btn btn-default" type="button">Restore Defaults</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <!-- Metrics History Configuration settings. -->
+        <div id="log_config" class="boxed-div">
+            <h1>
+                WHM Metric History Configuration
+            </h1>
+            <p>
+                <i>WHM records metrics periodically to help track diagnostics over time. Metrics are recorded on an hourly, daily, and weekly basis starting when
+                a user logs into the webapp for the first time after the application is started. To prevent the database from growing infinitely in size, information
+                will be dropped when data points reach the ages configured below.</i><br /><span class='rules'>All fields take whole numbers between 0 and 500</span>
+            </p>
+			<form id="set_record_config" class="set_config" action="settings" method="POST">
+                <!-- Currect setting values show as loading until JS changes them -->
+                <ul class="config_list">
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>Hours</strong>
+                            </li>
+                            <li>
+                                <p>Max record age for the hours scope.</p>
+                            </li>
+                            <li>
+                                Age:<span id="record_hours_value" class="config_value">loading...</span>
+                                <input class="form-control" name="record_hours" placeholder="Max Hours" type="number" min="0" max="500" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>Days</strong>
+                            </li>
+                            <li>
+                                <p>Max record age for the days scope.</p>
+                            </li>
+                            <li>
+                                Age:<span id="record_days_value" class="config_value">loading...</span>
+                                <input class="form-control" name="record_days" placeholder="Max Days" type="number" min="0" max="500" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>Weeks</strong>
+                            </li>
+                            <li>
+                                <p>Max record age for the weeks scope.</p>
+                            </li>
+                            <li>
+                                Age:<span id="record_weeks_value" class="config_value">loading...</span>
+                                <input class="form-control" name="record_weeks" placeholder="Max Weeks" type="number" min="0" max="500" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- Hidden variables for server request. -->
+                        <input type="hidden" id="record_default_flag" name="record_default_flag" value="0" />
+                        <input type="hidden" id="section" name="section" value="record" />
+
+                        <button class="btn btn-default" type="submit">Save</button>
+                        <button id="record_to_default" class="btn btn-default" type="button">Restore Defaults</button>
                     </li>
                 </ul>
             </form>

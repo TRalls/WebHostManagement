@@ -1,0 +1,1142 @@
+2018-10-09 05:20:41 logger.py    metrics-tracker Log cleared
+2018-10-09 05:20:41 logger.py    metrics-tracker Max log size reached: 145000 - Started new log.
+2018-10-09 05:20:41 logger.py    metrics-tracker Deleted aged log: whm_bak_2018_10_09_01_19_51.log
+2018-10-09 05:20:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:20:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:21:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:21:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:21:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:21:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:21:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:21:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:21:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:21:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:22:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:22:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:22:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:22:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:22:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:22:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:22:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:22:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:23:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:23:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:23:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:23:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:23:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:23:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:23:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:23:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:24:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:24:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:24:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:24:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:24:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:24:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:24:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:24:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:25:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:25:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:25:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:25:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:25:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:25:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:25:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:25:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:26:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:26:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:26:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:26:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:26:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:26:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:26:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:26:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:27:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:27:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:27:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:27:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:27:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:27:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:27:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:27:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:28:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:28:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:28:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:28:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:28:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:28:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:28:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:28:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:29:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:29:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:29:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:29:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:29:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:29:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:29:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:29:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:30:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:30:41 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:30:41 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:30:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:30:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:30:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:30:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:30:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:31:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:31:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:31:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:31:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:31:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:31:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:31:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:31:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:32:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:32:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:32:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:32:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:32:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:32:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:32:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:32:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:33:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:33:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:33:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:33:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:33:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:33:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:33:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:33:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:34:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:34:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:34:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:34:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:34:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:34:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:34:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:34:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:35:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:35:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:35:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:35:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:35:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:35:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:35:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:35:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:36:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:36:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:36:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:36:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:36:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:36:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:36:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:36:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:37:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:37:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:37:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:37:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:37:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:37:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:37:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:37:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:38:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:38:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:38:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:38:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:38:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:38:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:38:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:38:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:39:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:39:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:39:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:39:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:39:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:39:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:39:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:39:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:40:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:40:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:40:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:40:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:40:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:40:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:40:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:40:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:41:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:41:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:41:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:41:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:41:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:41:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:41:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:41:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:42:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:42:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:42:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:42:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:42:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:42:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:42:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:42:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:43:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:43:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:43:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:43:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:43:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:43:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:43:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:43:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:44:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:44:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:44:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:44:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:44:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:44:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:44:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:44:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:45:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:45:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:45:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:45:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:45:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:45:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:45:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:45:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:46:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:46:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:46:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:46:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:46:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:46:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:46:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:46:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:47:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:47:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:47:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:47:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:47:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:47:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:47:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:47:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:48:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:48:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:48:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:48:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:48:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:48:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:48:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:48:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:49:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:49:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:49:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:49:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:49:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:49:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:49:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:49:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:49:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:49:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:49:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:49:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:49:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:49:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:49:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:49:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:49:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:50:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:50:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:50:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:50:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:50:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:50:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:50:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:50:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:51:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:51:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:51:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:51:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:51:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:51:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:51:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:51:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:52:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:52:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:52:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:52:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:52:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:52:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:52:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:52:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:53:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:53:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:53:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:53:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:53:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:53:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:53:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:53:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:54:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:54:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:54:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:54:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:54:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:54:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:54:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:54:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:55:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:55:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:55:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:55:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:55:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:55:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:55:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:55:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:56:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:56:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:56:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:56:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:56:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:56:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:56:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:56:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:57:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:57:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:57:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:57:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:57:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:57:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:57:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:57:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:58:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:58:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:58:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:58:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:58:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:58:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:58:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:58:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 05:59:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 05:59:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 05:59:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 05:59:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 05:59:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 05:59:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 05:59:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 05:59:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:00:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:00:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:00:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:00:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:00:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:00:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:00:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:00:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:01:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:01:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:01:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:01:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:01:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:01:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:01:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:01:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:02:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:02:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:02:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:02:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:02:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:02:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:02:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:02:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:03:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:03:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:03:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:03:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:03:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:03:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:03:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:03:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:04:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:04:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:04:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:04:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:04:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:04:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:04:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:04:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:05:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:05:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:05:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:05:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:05:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:05:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:05:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:05:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:06:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:06:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:06:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:06:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:06:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:06:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:06:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:06:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:07:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:07:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:07:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:07:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:07:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:07:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:07:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:07:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:08:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:08:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:08:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:08:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:08:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:08:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:08:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:08:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:09:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:09:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:09:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:09:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:09:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:09:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:09:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:09:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:10:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:10:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:10:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:10:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:10:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:10:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:10:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:10:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:11:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:11:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:11:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:11:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:11:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:11:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:11:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:11:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:12:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:12:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:12:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:12:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:12:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:12:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:12:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:12:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:13:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:13:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:13:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:13:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:13:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:13:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:13:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:13:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:14:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:14:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:14:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:14:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:14:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:14:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:14:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:14:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:15:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:15:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:15:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:15:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:15:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:15:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:15:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:15:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:16:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:16:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:16:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:16:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:16:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:16:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:16:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:16:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:17:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:17:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:17:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:17:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:17:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:17:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:17:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:17:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:18:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:18:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:18:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:18:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:18:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:18:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:18:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:18:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:19:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:19:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:19:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:19:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:19:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:19:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:19:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:19:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:20:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:20:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:20:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:20:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:20:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:20:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:20:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:20:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:21:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:21:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:21:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:21:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:21:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:21:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:21:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:21:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:22:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:22:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:22:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:22:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:22:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:22:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:22:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:22:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:23:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:23:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:23:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:23:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:23:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:23:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:23:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:23:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:24:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:24:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:24:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:24:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:24:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:24:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:24:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:24:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:25:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:25:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:25:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:25:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:25:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:25:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:25:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:25:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:26:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:26:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:26:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:26:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:26:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:26:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:26:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:26:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:27:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:27:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:27:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:27:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:27:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:27:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:27:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:27:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:28:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:28:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:28:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:28:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:28:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:28:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:28:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:28:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:29:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:29:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:29:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:29:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:29:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:29:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:29:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:29:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:30:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:30:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:30:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:30:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:30:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:30:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:30:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:30:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:31:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:31:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:31:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:31:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:31:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:31:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:31:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:31:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:32:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:32:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:32:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:32:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:32:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:32:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:32:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:32:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:33:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:33:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:33:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:33:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:33:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:33:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:33:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:33:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:34:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:34:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:34:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:34:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:34:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:34:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:34:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:34:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:35:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:35:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:35:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:35:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:35:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:35:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:35:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:35:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:36:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:36:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:36:41 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:36:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:36:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:36:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:36:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:36:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:37:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:37:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:37:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:37:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:37:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:37:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:37:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:37:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:38:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:38:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:38:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:38:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:38:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:38:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:38:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:38:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:39:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:39:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:39:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:39:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:39:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:39:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:39:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:39:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:40:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:40:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:40:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:40:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:40:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:40:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:40:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:40:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:41:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:41:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:41:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:41:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:41:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:41:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:41:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:41:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:42:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:42:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:42:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:42:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:42:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:42:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:42:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:42:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:43:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:43:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:43:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:43:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:43:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:43:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:43:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:43:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:44:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:44:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:44:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:44:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:44:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:44:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:44:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:44:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:45:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:45:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:45:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:45:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:45:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:45:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:45:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:45:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:46:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:46:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:46:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:46:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:46:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:46:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:46:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:46:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:47:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:47:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:47:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:47:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:47:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:47:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:47:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:47:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:48:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:48:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:48:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:48:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:48:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:48:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:48:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:48:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:49:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:49:41 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:49:41 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:49:41 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:49:41 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:49:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:49:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:49:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:50:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:50:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:50:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:50:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:50:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:50:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:50:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:50:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:51:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:51:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:51:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:51:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:51:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:51:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:51:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:51:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:52:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:52:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:52:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:52:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:52:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:52:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:52:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:52:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:53:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:53:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:53:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:53:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:53:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:53:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:53:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:53:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:54:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:54:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:54:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:54:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:54:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:54:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:54:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:54:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:55:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:55:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:55:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:55:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:55:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:55:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:55:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:55:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:56:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:56:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:56:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:56:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:56:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:56:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:56:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:56:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:57:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:57:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:57:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:57:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:57:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:57:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:57:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:57:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:58:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:58:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:58:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:58:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:58:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:58:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:58:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:58:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 06:59:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 06:59:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 06:59:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 06:59:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 06:59:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 06:59:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 06:59:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 06:59:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:00:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:00:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:00:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:00:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:00:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:00:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:00:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:00:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:01:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:01:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:01:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:01:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:01:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:01:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:01:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:01:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:02:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:02:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:02:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:02:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:02:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:02:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:02:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:02:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:03:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:03:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:03:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:03:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:03:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:03:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:03:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:03:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:04:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:04:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:04:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:04:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:04:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:04:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:04:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:04:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:05:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:05:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:05:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:05:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:05:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:05:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:05:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:05:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:06:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:06:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:06:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:06:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:06:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:06:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:06:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:06:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:07:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:07:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:07:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:07:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:07:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:07:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:07:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:07:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:08:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:08:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:08:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:08:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:08:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:08:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:08:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:08:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:09:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:09:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:09:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:09:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:09:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:09:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:09:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:09:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:10:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:10:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:10:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:10:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:10:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:10:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:10:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:10:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:11:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:11:41 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:11:41 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:11:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:11:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:11:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:11:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:11:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:12:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:12:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:12:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:12:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:12:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:12:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:12:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:12:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:13:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:13:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:13:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:13:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:13:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:13:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:13:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:13:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:14:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:14:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:14:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:14:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:14:40 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:14:40 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:14:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:14:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:15:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:15:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:15:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:15:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:15:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:15:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:15:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:15:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:16:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:16:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:16:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:16:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:16:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:16:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:16:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:16:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:17:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:17:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:17:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:17:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:17:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:17:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:17:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:17:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:18:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:18:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:18:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:18:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:18:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:18:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:18:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:18:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 07:19:40 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-09 07:19:40 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-09 07:19:40 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-09 07:19:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 07:19:41 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-09 07:19:41 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 07:19:41 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 07:19:41 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-09 20:52:11 metrics.py   CLI-User        Began collecting metrics: ./metrics.py --------------
+2018-10-09 20:52:11 metrics.py   CLI-User          OS took command, but there was an issue: sensors -u.
+2018-10-09 20:52:11 metrics.py   CLI-User        Demo Mode - Using sample data.
+2018-10-09 20:52:11 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 20:52:11 metrics.py   CLI-User          Successfully ran: free -o | tail -n +2.
+2018-10-09 20:52:11 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: hostname | tr -d '{NL}'.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: uname -v | tr -d '{NL}'.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: ifconfig eth0 | tail -n +4.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsda.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdb.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdc.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdd.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-09 20:52:12 metrics.py   CLI-User          Successfully ran: ps -A | tail -n +2.
+2018-10-09 20:52:12 metrics.py   CLI-User        Report Generated. Full report: True --------------
+2018-10-09 20:52:31 metrics.py   CLI-User        Began collecting metrics: ./metrics.py update --------------
+2018-10-09 20:52:31 metrics.py   CLI-User        Running partial report.
+2018-10-09 20:52:31 metrics.py   CLI-User          OS took command, but there was an issue: sensors -u.
+2018-10-09 20:52:31 metrics.py   CLI-User        Demo Mode - Using sample data.
+2018-10-09 20:52:31 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-09 20:52:31 metrics.py   CLI-User          Successfully ran: free -o | tail -n +2.
+2018-10-09 20:52:31 metrics.py   CLI-User          Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-09 20:52:32 metrics.py   CLI-User          Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-09 20:52:32 metrics.py   CLI-User        Report Generated. Full report: False --------------
+2018-10-10 00:39:40 WebApp       tralls          tralls logged in.
+2018-10-10 00:39:41 metrics.py   tralls          Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:39:41 metrics.py   tralls            OS took command, but there was an issue: sensors -u.
+2018-10-10 00:39:41 metrics.py   tralls          Demo Mode - Using sample data.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: free -o | tail -n +2.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: hostname | tr -d '{NL}'.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: uname -v | tr -d '{NL}'.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: ifconfig eth0 | tail -n +4.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsda.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdb.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdc.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdd.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 00:39:41 metrics.py   tralls            Successfully ran: ps -A | tail -n +2.
+2018-10-10 00:39:41 metrics.py   tralls          Report Generated. Full report: True --------------
+2018-10-10 00:40:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:40:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:40:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:40:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:40:35 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:40:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:40:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:40:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:41:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:41:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:41:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:41:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:41:35 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:41:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:41:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:41:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:42:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:42:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:42:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:42:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:42:35 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:42:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:42:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:42:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:43:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:43:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:43:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:43:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:43:36 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:43:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:43:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:43:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:44:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:44:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:44:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:44:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:44:36 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:44:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:44:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:44:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:45:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:45:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:45:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:45:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:45:36 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:45:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:45:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:45:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:46:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:46:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:46:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:46:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:46:35 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:46:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:46:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:46:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:47:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:47:36 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:47:36 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:47:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:47:36 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:47:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:47:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:47:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:48:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:48:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:48:36 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:48:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:48:36 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:48:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:48:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:48:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:49:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:49:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:49:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:49:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:49:36 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:49:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:49:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:49:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:50:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:50:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:50:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:50:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:50:35 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:50:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:50:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:50:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:51:35 metrics.py   metrics-tracker Began collecting metrics: /opt/pyenv/versions/3.6.0/bin/flask run --host=0.0.0.0 --port=8080 --reload --with-threads --------------
+2018-10-10 00:51:35 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 00:51:35 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 00:51:35 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 00:51:36 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 00:51:36 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 00:51:36 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 00:51:36 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 00:52:34 logger.py    tralls          Max log size reached: 1000 - Started new log.

@@ -12,7 +12,7 @@
     is not unique to any specific user-accessed URL. In these cases, the client side scripts send requests to POST
     only URLs that are capable of accommodating the needs of more than one user-accessed URL.
 
-    Run this file with flask - "flask run".
+    Run this file to start the application with python 3.5+.
 """
 
 from flask import Flask, flash, redirect, render_template, request, session, url_for, jsonify
@@ -47,6 +47,9 @@ logger = Logger("Unknown", "WebApp")
 """
 @app.before_first_request
 def before_first_request():
+    # Load record keeping config settings
+    load_record_conf()
+
     # Schedule recording of metrics for charting.
     # https://stackoverflow.com/questions/21214270/scheduling-a-function-to-run-every-hour-on-flask
     scheduler = BackgroundScheduler()
@@ -55,21 +58,21 @@ def before_first_request():
     scheduler.add_job(
         func=record_metrics,
         args=["hours"],
-        trigger=IntervalTrigger(seconds=20), # hours=1 (May use other values for testing.)
+        trigger=IntervalTrigger(minutes=1), # hours=1 (May use other values for testing.)
         id='hourly_metrics',
         name='Records current metrics on an hourly scope',
         replace_existing=True)
     scheduler.add_job(
         func=record_metrics,
         args=["days"],
-        trigger=IntervalTrigger(days=1), # days=1
+        trigger=IntervalTrigger(hours=1), # days=1
         id='daily_metrics',
         name='Records current metrics on a daily scope',
         replace_existing=True)
     scheduler.add_job(
         func=record_metrics,
         args=["weeks"],
-        trigger=IntervalTrigger(weeks=1), # weeks=1
+        trigger=IntervalTrigger(hours=2), # weeks=1
         id='weekly_metrics',
         name='Records current metrics on a weekly scope',
         replace_existing=True)
@@ -93,7 +96,7 @@ def cpu():
     return render_template("cpu.html")
 
 """
-    Displays demsg logs and, if user is an admin, whm logs (logged by this app).
+    Displays dmesg logs and, if user is an admin, whm logs (logged by this app).
 """
 @app.route("/logs")
 @login_required
@@ -101,7 +104,6 @@ def logs():
     if request.args.get('action') == "get_whm_logs":
         if session['admin']:
             # WHM logs requested and user is an admin. Return whm.log (current log) if no other log is specified.
-            # TODO test to see what happens if none-exiting logname is requested.
             logname = request.args.get('logname')
             if not logname:
                 logname = 'whm.log'
@@ -208,7 +210,13 @@ def settings():
 
             if result['return'] == True:
                 # Update was successful - Log and return.
-                update_session_vars()
+                update_return = update_session_vars()
+                # Check if session vars updated successfully.
+                if not update_return['success']:
+                    return jsonify({
+                        'return': False,
+                        'details': "User information updated, but there was an issue reading the updated info."
+                    })
                 session['logger'].write("Update with info: " + str(update_bundle))
                 return jsonify({
                     'return': True,
@@ -242,101 +250,158 @@ def settings():
             })
 
         # Returns the current log settings.
-        if request.form.get('action') == "get_log_config":
+        if request.form.get('action') == "get_config":
             return jsonify(get_config('whm.cfg'))
 
         # Sets log settings
-        if request.form.get('action') == "set_log_config":
-            # Load defaults from backup config if defaults are requested, or load settings from the form.
-            if int(request.form.get('default_flag')) == 1:
-                settings = get_config('whm.cfg.bak')
+        if request.form.get('action') == "set_config":
+            if request.form.get('section') == "log":
+                # Load defaults from backup config if defaults are requested, or load settings from the form.
+                if int(request.form.get('log_default_flag')) == 1:
+                    settings = get_config('whm.cfg.bak')
+                    # Ensure backup config was loaded.
+                    if not settings['return']:
+                        session['logger'].write(settings['details'])
+                        return jsonify(settings)
+                else:
+                    settings = {
+                        'max_log_size': request.form.get('max_size'),
+                        'max_log_age_unit': request.form.get('max_age_unit'),
+                        'max_log_age_n': request.form.get('max_age_n'),
+                        'user_str_len': request.form.get('usr_len'),
+                        'source_str_len': request.form.get('src_len')
+                    }
 
-                # TODO validate true return
-            else:
-                settings = {
-                    'max_log_size': request.form.get('max_size'),
-                    'max_log_age_unit': request.form.get('max_age_unit'),
-                    'max_log_age_n': request.form.get('max_age_n'),
-                    'user_str_len': request.form.get('usr_len'),
-                    'source_str_len': request.form.get('src_len')
-                }
+                # Ensure max_log_size is within range. Errors may occur outside of this range.
+                if settings['max_log_size']:
+                    try:
+                        x = int(settings['max_log_size'])
+                        if not 5000 <= x <= 1000000000:
+                            raise Exception()
+                    except:
+                        return jsonify({
+                            'return': False,
+                            'details': "Invalid Maximum Log File Size"
+                        })
 
-            # Ensure max_log_size is within range. Errors may occur outside of this range.
-            if settings['max_log_size']:
+                # Ensure valid age unit.
+                if not settings['max_log_age_unit'] in ['minutes', 'hours', 'days', 'weeks']:
+                    return jsonify({
+                        'return': False,
+                        'details': "Invalid Maximum Archive Age Unit"
+                    })
+
+                # Ensure age is a non-neg whole number.
+                if settings['max_log_age_n']:
+                    try:
+                        x = int(settings['max_log_age_n'])
+                        if not 0 <= x:
+                            raise Exception()
+                    except:
+                        return jsonify({
+                            'return': False,
+                            'details': "Invalid Maximum Archive Age"
+                        })
+
+                # Ensure user_str_len is in acceptable range.
+                if settings['user_str_len']:
+                    try:
+                        x = int(settings['user_str_len'])
+                        if not 0 <= x <= 50:
+                            raise Exception()
+                    except:
+                        return jsonify({
+                            'return': False,
+                            'details': "Invalid User Length"
+                        })
+
+                # Ensure source_str_len is in acceptable range.
+                if settings['source_str_len']:
+                    try:
+                        x = int(settings['source_str_len'])
+                        if not 0 <= x <= 50:
+                            raise Exception()
+                    except:
+                        return jsonify({
+                            'return': False,
+                            'details': "Invalid Source Length"
+                        })
+
+                # Attempt to write each setting to config.
                 try:
-                    x = int(settings['max_log_size'])
-                    if not 5000 <= x <= 1000000000:
-                        raise Exception()
+                    config = configparser.RawConfigParser()
+                    config.read('whm.cfg')
+                    for var in ['max_log_size', 'max_log_age_unit', 'max_log_age_n', 'user_str_len', 'source_str_len']:
+                        if settings[var]:
+                            config.set('logger', var, settings[var])
+                    with open('whm.cfg', 'w') as configfile:
+                        config.write(configfile)
                 except:
                     return jsonify({
                         'return': False,
-                        'details': "Invalid Maximum Log File Size"
+                        'details': "Failed to write config."
                     })
 
-            # Ensure valid age unit.
-            if not settings['max_log_age_unit'] in ['minutes', 'hours', 'days', 'weeks']:
+                # Log and return success.
+                session["logger"].write("Log config changed")
                 return jsonify({
-                    'return': False,
-                    'details': "Invalid Maximum Archive Age Unit"
+                    'return': True,
+                    'details': "Function ran with no errors."
                 })
 
-            # Ensure age is a non-neg whole number.
-            if settings['max_log_age_n']:
+		    # Sets record settings
+            if request.form.get('section') == "record":
+                # Load defaults from backup config if defaults are requested, or load settings from the form.
+                if int(request.form.get('record_default_flag')) == 1:
+                    settings = get_config('whm.cfg.bak')
+                    if not settings['return']:
+                        # Ensure backup config was loaded.
+                        session['logger'].write(settings['details'])
+                        return jsonify(settings)
+                else:
+                    settings = {
+                        'hours_age_max': request.form.get('record_hours'),
+                        'days_age_max': request.form.get('record_days'),
+                        'weeks_age_max': request.form.get('record_weeks')
+                    }
+
+                # Ensure all fields are whole numbers between 0 and 500.
+                for field in ['hours_age_max', 'days_age_max', 'weeks_age_max']:
+                    print(field)
+                    if settings[field]:
+                        try:
+                            x = int(settings[field])
+                            if not 0 <= x <= 500:
+                                raise Exception()
+                        except:
+                            return jsonify({
+                                'return': False,
+                                'details': "Values must be whole numbers between 0 and 500."
+                            })
+
+                # Attempt to write each setting to config.
                 try:
-                    x = int(settings['max_log_age_n'])
-                    if not 0 <= x:
-                        raise Exception()
+                    config = configparser.RawConfigParser()
+                    config.read('whm.cfg')
+                    for var in ['hours_age_max', 'days_age_max', 'weeks_age_max']:
+                        if settings[var]:
+                            config.set('record', var, settings[var])
+                    with open('whm.cfg', 'w') as configfile:
+                        config.write(configfile)
+                    # Load new config settings
+                    load_record_conf()
                 except:
                     return jsonify({
                         'return': False,
-                        'details': "Invalid Maximum Archive Age"
+                        'details': "Failed to write config."
                     })
 
-            # Ensure user_str_len is in acceptable range.
-            if settings['user_str_len']:
-                try:
-                    x = int(settings['user_str_len'])
-                    if not 0 <= x <= 50:
-                        raise Exception()
-                except:
-                    return jsonify({
-                        'return': False,
-                        'details': "Invalid User Length"
-                    })
-
-            # Ensure source_str_len is in acceptable range.
-            if settings['source_str_len']:
-                try:
-                    x = int(settings['source_str_len'])
-                    if not 0 <= x <= 50:
-                        raise Exception()
-                except:
-                    return jsonify({
-                        'return': False,
-                        'details': "Invalid Source Length"
-                    })
-
-            # Attempt to write each setting to config.
-            try:
-                config = configparser.RawConfigParser()
-                config.read('whm.cfg')
-                for var in ['max_log_size', 'max_log_age_unit', 'max_log_age_n', 'user_str_len', 'source_str_len']:
-                    if settings[var]:
-                        config.set('logger', var, settings[var])
-                with open('whm.cfg', 'w') as configfile:
-                    config.write(configfile)
-            except:
+                # Log and return success.
+                session["logger"].write("Log config changed")
                 return jsonify({
-                    'return': False,
-                    'details': "Failed to write config."
+                    'return': True,
+                    'details': "Function ran with no errors."
                 })
-
-            # Log and return success.
-            session["logger"].write("Log config changed")
-            return jsonify({
-                'return': True,
-                'details': "Function ran with no errors."
-            })
 
         # User table actions - Requests can be accepted or declined, and current users can be deleted or have admin rights toggled.
         # Requests are handled by users.py and actions are logged.
@@ -347,7 +412,7 @@ def settings():
                     'return': False,
                     'details': "Failed to accept user."
                 })
-        # TODO Should I have error handling for below cases?
+        # User action handling.
         if request.form.get('action') == "decline":
             users.delReq(request.form.get('request_id'))
             session['logger'].write("Deleted request with id: " + request.form.get('request_id'))
@@ -414,7 +479,14 @@ def login():
         # Set session variables.
         session["user_id"] = selection['user'][0]
         session["username"] = selection['user'][1]
-        update_session_vars()   # vars that may be dynamic
+        update_return = update_session_vars()   # vars that may be dynamic
+        # Check if session vars updated successfully.
+        if not update_return['success']:
+            return jsonify({
+                'return': False,
+                'details': "User logged in but there was an issue loading session variables."
+            })
+
 
         # Setup logging for this user.
         session["logger"] = Logger(session["username"], "WebApp");
@@ -490,7 +562,6 @@ def register():
                 'details': "Username is already requested. Please try another."
             })
 
-        # TODO, may be able to get rid of this line if client side checks this
         # Validate password.
         user_request[1] = pwd_context.hash(user_request[1])
         if not pwd_context.verify(request.form.get("vpassword"), user_request[1]):
@@ -535,9 +606,8 @@ def getReport():
 @login_required
 def command():
     # To be used by admins only. Validate access.
-    # TODO - there should be no command parameter.
     if not session['admin']:
-        session['logger'].write("Non-admin tried to send OS command: " + request.form.get('command'))
+        session['logger'].write("Non-admin tried access OS command url.")
         return jsonify({
             'return': False,
             'details': "Unauthorized Access"
@@ -545,19 +615,27 @@ def command():
 
     # Actions available from processes URL.
     if request.form.get('source') == 'processes':
-
+        # Validate pid.
+        if not request.form.get('pid').isdigit():
+            return jsonify({
+                'return': False,
+                'details': "Invalid pid: " + request.form.get('pid')
+            })
         # Set command based on request parameters.
-        # TODO - validate pid is an int?
         if request.form.get('action') == 'hang':
             command = "kill -1 " + request.form.get('pid')
         elif request.form.get('action') == 'kill':
             command = "kill -9 " + request.form.get('pid')
         else:
-            # action not available.
+            # Action not available.
             return jsonify({
                 'return': False,
                 'details': "Invalid action: " + request.form.get('action')
             })
+
+    # Action to restart.
+    if request.form.get('action') == 'restart':
+        command = "restart -r now"
 
     # Log the command that resulted from the request parameters.
     session["logger"].write("Running command: " + command)
@@ -583,23 +661,55 @@ def command():
 @app.route("/chart_data", methods=["POST"])
 @login_required
 def chart_data():
-    # Pull table lines based on parameters.
-    # TODO validate SQL - validate function may not work here... check to see if provided info is relevent.
-    lines = to_sql("SELECT * FROM '" + request.form.get('data_set') + "_" + request.form.get('scale') + "';", "r", "chart_data.db")
-    keys = to_sql("SELECT sql FROM sqlite_master WHERE name = 'cpu_days';", "r", "chart_data.db")
-    # Return table headers as keys
-    # SELECT sql FROM sqlite_master WHERE name = "cpu_days";
-    # Headers may be able to be pulled from report on client side.... TODO
-    if lines['success']:
-        # Success, return data.
+
+    # Initiate return value.
+    result = {}
+
+    # Note the target_table. If no scale is supplied, default to hours.
+    if not request.form.get('scale'):
+        scale = 'hours'
+    else:
+        scale = request.form.get('scale')
+    target_table = request.form.get('data_set') + "_" + scale
+
+    # Validate SQL to by seeing if target_table is in the db.
+    tables = [chart[0] for chart in to_sql('SELECT name FROM sqlite_master WHERE type = "table";', "r", "chart_data.db")['details']]
+    if not target_table in tables:
+        session['logger'].write('Failed to read from table. Scope might not be available yet.')
+        session['logger'].write('Table name: ' + target_table)
         return jsonify({
-            'success': True,
-            'data': lines['details'],
-            'keys': keys['details']
+            'success': False,
+            'data': 'Table does not exist.'
         })
+
+    # If historical data is requested.
+    if request.form.get('data_needed') == 'history':
+
+        # Pull table lines based on parameters.
+        lines = to_sql("SELECT * FROM '" + target_table + "';", "r", "chart_data.db")
+        (result['data'], result['success']) = (lines['details'], lines['success'])
+
+    # If key keys are needed from DB headers.
+    if request.form.get('data_needed') == 'keys':
+        # Determine key order from DB - SQL validated at start of function.
+        table_layout = to_sql("PRAGMA table_info('" + target_table + "');", "r", "chart_data.db")
+        result['keys'] = []
+        for field in table_layout['details']:
+            # Index 1 stores name of the header
+            if field[1] != 'time':
+                result['keys'].append(field[1])
+        result['success'] = table_layout['success']
+
+    if result['success']:
+        # Success, return data.
+        return jsonify(result)
     else:
         # Failure - Return.
         return jsonify({
             'success': False,
-            'data': 'SQL did not run. Table may not exist yet.'
+            'data': 'SQL failed to run.'
         })
+
+if __name__ == '__main__':
+    port_n = get_config('whm.cfg')['port_n']
+    app.run(host="0.0.0.0", port=port_n)
