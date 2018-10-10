@@ -1,14 +1,15 @@
-import datetime
-import os
-import shutil
-import configparser
-
 """
     Manages logging operations.
     This class allows each user and source to have their own instance in order
     to maintain accountability and to track down errors. File management is taken care of
     here so that over files simply need to create an instance and pass in events to log.
 """
+
+import datetime
+import os
+import shutil
+import configparser
+
 class Logger():
 
     """
