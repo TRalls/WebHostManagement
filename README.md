@@ -8,19 +8,35 @@ WHM is intended for to be ran on a single physical host where that host alone pr
 
 This application also serves as a final class project and a representation of my current skill level and style. See Credits for more on this.
 
+## Dependencies
+
+* Python3.5 or higher
+* Flask
+* Flask-Session
+* passlib
+* apscheduler
+* lm-sensors
+* smartmontools
+
 ## Install
 
-TBD TODO
-
-had to install flask-session
-passlib
-apscheduler
+* Ensure all dependencies are available.
+* Change directories to where you intend to run the application from.
+* Download the project.
+```
+git clone https://github.com/TRalls/WebHostManagement.git
+```
+* Change directories to WebHostManagement.
+* Run users.py to create the first user account.
+* The default network port is 8080. If this needs to be changed, edit whm.cfg.
+    * Ensure your network equipment and settings allow the configured port to pass traffic.
+* Start application.py.
+* The application is now accessible by IP/Domain Name:Port.
 
 ## Build Status
 
-Running with no known errors on Cloud9 dev environment (Demo mode).
-
-Untested on physical hardware.
+Running with no known errors on Cloud9 dev environment on Python3.6.0 (Demo mode).
+Testing on physical hardware on Python3.6.6.
 
 ## Stack
 

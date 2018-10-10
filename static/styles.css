@@ -232,6 +232,7 @@ pre.logs {
 
 #processes_table tr th, #processes_table tr td {
     border: 1px solid black;
+    padding-left: 5px;
 }
 
 button {

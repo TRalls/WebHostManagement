@@ -68,3 +68,114 @@
 2018-10-10 16:30:16 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
 2018-10-10 16:30:16 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
 2018-10-10 16:30:16 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 22:07:16 WebApp       tralls          tralls logged in.
+2018-10-10 22:07:17 metrics.py   tralls          Began collecting metrics: ./application.py --------------
+2018-10-10 22:07:17 metrics.py   tralls            OS took command, but there was an issue: sensors -u.
+2018-10-10 22:07:17 metrics.py   tralls          Demo Mode - Using sample data.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: free -o | tail -n +2.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: hostname | tr -d '{NL}'.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: uname -v | tr -d '{NL}'.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: ifconfig eth0 | tail -n +4.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsda.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdb.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdc.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdd.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:07:17 metrics.py   tralls            Successfully ran: ps -A | tail -n +2.
+2018-10-10 22:07:17 metrics.py   tralls          Report Generated. Full report: True --------------
+2018-10-10 22:08:13 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-10 22:08:13 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 22:08:13 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 22:08:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:08:13 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 22:08:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:08:13 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:08:13 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 22:09:13 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-10 22:09:13 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 22:09:13 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 22:09:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:09:13 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 22:09:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:09:13 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:09:13 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 22:10:13 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-10 22:10:13 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 22:10:13 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 22:10:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:10:13 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 22:10:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:10:13 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:10:13 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 22:11:13 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-10 22:11:13 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 22:11:13 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 22:11:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:11:13 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 22:11:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:11:13 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:11:13 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 22:11:26 metrics.py   tralls          Began collecting metrics: ./application.py --------------
+2018-10-10 22:11:26 metrics.py   tralls            OS took command, but there was an issue: sensors -u.
+2018-10-10 22:11:26 metrics.py   tralls          Demo Mode - Using sample data.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: free -o | tail -n +2.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: hostname | tr -d '{NL}'.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: uptime -p | cut -c 4- | tr -d '{NL}'.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: uname -v | tr -d '{NL}'.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-dmesg.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: ifconfig eth0 | tail -n +4.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-lsblk.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsda.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdb.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdc.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smart-H-PASSED.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-smartAsdd.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sn.txt.
+2018-10-10 22:11:26 metrics.py   tralls            Successfully ran: ps -A | tail -n +2.
+2018-10-10 22:11:26 metrics.py   tralls          Report Generated. Full report: True --------------
+2018-10-10 22:12:13 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-10 22:12:13 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 22:12:13 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 22:12:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:12:13 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 22:12:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:12:13 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:12:13 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 22:13:13 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-10 22:13:13 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 22:13:13 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 22:13:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:13:13 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 22:13:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:13:13 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:13:13 metrics.py   metrics-tracker Report Generated. Full report: False --------------
+2018-10-10 22:14:13 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-10 22:14:13 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-10 22:14:13 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-10 22:14:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-10 22:14:13 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-10 22:14:13 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-10 22:14:13 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-10 22:14:13 metrics.py   metrics-tracker Report Generated. Full report: False --------------

@@ -368,7 +368,6 @@ def settings():
 
                 # Ensure all fields are whole numbers between 0 and 500.
                 for field in ['hours_age_max', 'days_age_max', 'weeks_age_max']:
-                    print(field)
                     if settings[field]:
                         try:
                             x = int(settings[field])
