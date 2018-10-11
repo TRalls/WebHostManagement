@@ -30,9 +30,30 @@ git clone https://github.com/TRalls/WebHostManagement.git
 * Run users.py to create the first user account.
 * The default network port is 8080. If this needs to be changed, edit whm.cfg.
     * Ensure your network equipment and settings allow the configured port to pass traffic.
-* Start application.py.
+* Start application.py as root.
 * The application is now accessible by IP/Domain Name:Port.
 * Consider auto-running this application on boot.
+
+### Auto-Running
+
+The setup to run this application at boot will vary by system. In order to get full functionality this application much run as root. The following worked for my system at home running Debian 3.16.51-3.
+* Install sudo if not already installed.
+* Set up a startup script in your location of choice. I named mine start.sh within my whm directory.
+* Place the following in the script:
+	* Note: changing directories will ensure application.py can access neighboring files.
+```
+cd [full/path/to/directory/containing/application.py]
+sudo nohup python [full/path/to/application.py]
+```
+* As root, run crontab -e.
+```
+crontab -e
+```
+* Append the following line.
+```
+@reboot [full/path/to/the/startup/script/you/created]
+```
+* Restart system and ensure application is running. If you can use the restart button in the webapp, you should have full functionality.
 
 ## Build Status
 
@@ -146,6 +167,7 @@ This project is in near completed state. All TODOs are arranged to be completed.
     * https://www.iconfinder.com/icons/134221/arrow_refresh_reload_repeat_sync_update_icon
     * License Creative Commons
 * Form submission handling: https://mobility.amazon.com/part/search?search_string=P9078+&query=GO&search_type=all&max_rows=50
+* Random facts while waiting for system reboots: mentalfloss.com
 
 ## License
 

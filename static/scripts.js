@@ -194,7 +194,11 @@ function home() {
             });
             // There should be no return here. Assuming host is restarting.
             alert("Rebooting... Enjoy a random fact while system is rebooting.");
-            document.location.href="http://mentalfloss.com/amazingfactgenerator";
+            //document.location.href="http://mentalfloss.com/amazingfactgenerator";
+            window.open(
+                'http://mentalfloss.com/amazingfactgenerator',
+                '_blank'
+            );
         }
     });
 }
