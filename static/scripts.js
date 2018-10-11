@@ -262,7 +262,7 @@ function storage() {
                     '</tr>' +
                     '<tr>' +
                         '<td>Smart Health</td>' +
-                        '<td>' + report.drives[drive].smart_health + '</td>' +
+                        '<td id="smart_health_' + drive + '">' + report.drives[drive].smart_health + '</td>' +
                     '</tr>' +
                     '<tr>' +
                         '<td>Size</td>' +
@@ -307,6 +307,13 @@ function storage() {
         }
         drive_html += '</table></div>';
         $('#physical_drives').append(drive_html);
+
+        // Style SMART health.
+        if (report.drives[drive].smart_health == 'PASSED') {
+            $('#smart_health_' + drive).addClass('smart_pass');
+        } else {
+            $('#smart_health_' + drive).addClass('smart_fail');
+        }
 
         // Initialize chart info.
         var chart_data = {

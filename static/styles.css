@@ -116,6 +116,16 @@ body {
     display: block;
 }
 
+.smart_pass {
+    color: green;
+    font-weight: bold;
+}
+
+.smart_fail {
+    color: red;
+    font-weight: bold;
+}
+
 partition_chart {
     display: inline-block;
 }
