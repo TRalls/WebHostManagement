@@ -1,0 +1,11 @@
+2018-10-11 02:25:35 logger.py    CLI-User        Failed to load vars from config.
+2018-10-11 02:25:35 logger.py    Unknown         Failed to load vars from config.
+2018-10-11 02:25:35 WebApp       Unknown         Initialized config
+2018-10-11 02:25:43 metrics.py   metrics-tracker Began collecting metrics: ./application.py --------------
+2018-10-11 02:25:43 metrics.py   metrics-tracker   OS took command, but there was an issue: sensors -u.
+2018-10-11 02:25:43 metrics.py   metrics-tracker Demo Mode - Using sample data.
+2018-10-11 02:25:43 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-sensors.txt.
+2018-10-11 02:25:43 metrics.py   metrics-tracker   Successfully ran: free -o | tail -n +2.
+2018-10-11 02:25:43 metrics.py   metrics-tracker   Successfully ran: cat /home/ubuntu/workspace/project/samples/sample-df.txt.
+2018-10-11 02:25:43 metrics.py   metrics-tracker   Successfully ran: top -b -n1 | grep Cpu | tr -d '{NL}'.
+2018-10-11 02:25:43 metrics.py   metrics-tracker Report Generated. Full report: False --------------
