@@ -282,7 +282,7 @@ def settings():
         if request.form.get('action') == "set_config":
             if request.form.get('section') == "log":
                 # Load defaults from backup config if defaults are requested, or load settings from the form.
-                if int(request.form.get('log_default_flag')) == 1:
+                if int(request.form.get('logs_default_flag')) == 1:
                     settings = get_config('whm.cfg.bak')
                     # Ensure backup config was loaded.
                     if not settings['return']:

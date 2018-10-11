@@ -569,14 +569,12 @@ function logs() {
 */
 function settings() {
     // Clear form data.
-    $('#update_info')[0].reset();
-    $('#update_other_info')[0].reset();
-    $('#set_log_config')[0].reset();
-    $('#set_record_config')[0].reset();
-    $('#set_port_config')[0].reset();
-    $('#record_default_flag').val(0);
-    $('#port_default_flag').val(0);
-    $('#default_flag').val(0);
+    $('form').each(function() {
+        $(this)[0].reset();
+    });
+    $('.default_flag').each(function() {
+        $(this).val(0);
+    });
 
     // This block is only applicable to admins
     if (admin == 1) {
@@ -833,18 +831,12 @@ function settings() {
             });
         });
 
-        // Default config handlers. 1 signifies default button was clicked.
-        $('#logs_to_default').click(function() {
-            $('#log_default_flag').val(1);
-            $('#set_log_config').submit();
-        });
-        $('#record_to_default').click(function() {
-            $('#record_default_flag').val(1);
-            $('#set_record_config').submit();
-        });
-        $('#port_to_default').click(function() {
-            $('#port_default_flag').val(1);
-            $('#set_port_config').submit();
+        // Default config handler. 1 signifies default button was clicked.
+        $('.default_btn').click(function() {
+            var btn_id = $(this).attr('id');
+            var section = btn_id.substr(0, btn_id.indexOf('_'));
+            $('#' + section + '_default_flag').val(1);
+            $('#set_' + section + '_config').submit();
         });
     }
 

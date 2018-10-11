@@ -235,7 +235,7 @@
                 future archives behave.</i>
             </p>
             <!-- Form rules are enforced here and on server -->
-            <form id="set_log_config" class="set_config" action="settings" method="POST">
+            <form id="set_logs_config" class="set_config" action="settings" method="POST">
                 <!-- Currect setting values show as loading until JS changes them -->
                 <ul class="config_list">
                     <li>
@@ -309,11 +309,11 @@
                     </li>
                     <li>
                         <!-- Hidden variable for server request. -->
-                        <input type="hidden" id="log_default_flag" name="log_default_flag" value="0" />
+                        <input type="hidden" id="logs_default_flag" name="logs_default_flag" class="default_flag" value="0" />
                         <input type="hidden" id="section" name="section" value="log" />
 
                         <button class="btn btn-default" type="submit">Save</button>
-                        <button id="logs_to_default" class="btn btn-default" type="button">Restore Defaults</button>
+                        <button id="logs_to_default" class="default_btn btn btn-default" type="button">Restore Defaults</button>
                     </li>
                 </ul>
             </form>
@@ -376,11 +376,11 @@
                     </li>
                     <li>
                         <!-- Hidden variables for server request. -->
-                        <input type="hidden" id="record_default_flag" name="record_default_flag" value="0" />
+                        <input type="hidden" id="record_default_flag" name="record_default_flag" class="default_flag" value="0" />
                         <input type="hidden" id="section" name="section" value="record" />
 
                         <button class="btn btn-default" type="submit">Save</button>
-                        <button id="record_to_default" class="btn btn-default" type="button">Restore Defaults</button>
+                        <button id="record_to_default" class="default_btn btn btn-default" type="button">Restore Defaults</button>
                     </li>
                 </ul>
             </form>
@@ -417,11 +417,11 @@
 
                     <li>
                         <!-- Hidden variables for server request. -->
-                        <input type="hidden" id="port_default_flag" name="port_default_flag" value="0" />
+                        <input type="hidden" id="port_default_flag" name="port_default_flag" class="default_flag" value="0" />
                         <input type="hidden" id="section" name="section" value="port" />
 
                         <button class="btn btn-default" type="submit">Save</button>
-                        <button id="port_to_default" class="btn btn-default" type="button">Restore Default</button>
+                        <button id="port_to_default" class="default_btn btn btn-default" type="button">Restore Default</button>
                     </li>
                 </ul>
             </form>

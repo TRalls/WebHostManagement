@@ -123,7 +123,7 @@ Admins can view user logs on the logs tab. These logs show activities carried ou
 
 #### Settings
 
-Standard users only see a form to update their personal information here. Admins see the same form but can also manage current and requesting users from here. This is also where admins can configure behavior of logs and records of metrics. Configuration settings are stored in whm.cfg, but it is best not to edit this manually (except for port_n).
+Standard users only see a form to update their personal information here. Admins see the same form but can also manage current and requesting users from here. This is also where admins can configure behavior of logs and records of metrics. Configuration settings are stored in whm.cfg, but it is best not to edit this manually (except for port_n which may need to be changed manually to initially access the web interface).
 
 ### Command Line Tools
 
