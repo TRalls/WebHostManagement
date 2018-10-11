@@ -191,11 +191,10 @@ function home() {
                     source: 'home',
                     action: 'restart'
                 },
-                success: function(data) {
-                    alert("Rebooting... Enjoy a random fact while system is rebooting.");
-                    document.location.href="http://mentalfloss.com/amazingfactgenerator";
-                }
             });
+            // There should be no return here. Assuming host is restarting.
+            alert("Rebooting... Enjoy a random fact while system is rebooting.");
+            document.location.href="http://mentalfloss.com/amazingfactgenerator";
         }
     });
 }
@@ -563,7 +562,9 @@ function settings() {
     $('#update_other_info')[0].reset();
     $('#set_log_config')[0].reset();
     $('#set_record_config')[0].reset();
+    $('#set_port_config')[0].reset();
     $('#record_default_flag').val(0);
+    $('#port_default_flag').val(0);
     $('#default_flag').val(0);
 
     // This block is only applicable to admins
@@ -786,6 +787,7 @@ function settings() {
                     $('#record_hours_value').html("Failed to Load.");
                     $('#record_days_value').html("Failed to Load.");
                     $('#record_weeks_value').html("Failed to Load.");
+                    $('#port_n').html("Failed to Load.");
                 } else {
                     $('#max_size_value').html(data.max_log_size);
                     $('#max_age_value').html(data.max_log_age_n + " " + data.max_log_age_unit.slice(0, -1) + "(s)");
@@ -795,6 +797,7 @@ function settings() {
                     $('#record_hours_value').html(data.hours_age_max);
                     $('#record_days_value').html(data.days_age_max);
                     $('#record_weeks_value').html(data.weeks_age_max);
+                    $('#port_n').html(data.port_n);
                 }
             }
         });
@@ -827,6 +830,10 @@ function settings() {
         $('#record_to_default').click(function() {
             $('#record_default_flag').val(1);
             $('#set_record_config').submit();
+        });
+        $('#port_to_default').click(function() {
+            $('#port_default_flag').val(1);
+            $('#set_port_config').submit();
         });
     }
 

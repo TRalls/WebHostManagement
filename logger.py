@@ -42,17 +42,6 @@ class Logger():
             config_success = False
 
         # Load other instance variables.
-
-        """ Trying this section in the block above.
-        try:
-            user_str_len = config.getint('logger', 'user_str_len')
-            source_str_len = config.getint('logger', 'source_str_len')
-        except:
-            # Failed to read config, setting default values.
-            user_str_len = 15
-            source_str_len = 12
-            config_success = False """
-
         self.user = (user + (" " * user_str_len))[:user_str_len]
         self.source = (source + (" " * source_str_len))[:source_str_len]
         self.path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "logs")

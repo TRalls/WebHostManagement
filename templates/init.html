@@ -1,0 +1,28 @@
+<!--
+    Reminds user to create first user through users.py
+
+    This doc is used with flask to extend layout.html.
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Initialize
+{% endblock %}
+
+{% block main %}
+    <div id="dmesg_logs" class="boxed-div">
+        <h1>No User Tables Exist</h1>
+        <p>
+            Please run users.py to create the first user. This will unlock the web interface.
+        </p>
+        <p>
+            See the <a href="https://github.com/TRalls/WebHostManagement/blob/master/README.md" target="_blank">README</a>
+            for more information.
+        </p>
+    </div>
+    <!-- Limit nav interface. -->
+    <script>
+        $('.navbar-right').html('');
+    </script>
+{% endblock %}

@@ -12,6 +12,7 @@
 """
 
 import sqlite3
+import os
 from logger import Logger
 from helpers import to_sql, validate_sql
 from passlib.apps import custom_app_context as pwd_context
@@ -24,6 +25,23 @@ cli = False
     Runs if executed from the CLI.
 """
 def main():
+    # Create whm.db to track users and requesters if it doesn't exits. This unblockes the web interface.
+    if not os.path.exists(os.path.join(os.path.abspath(os.path.dirname(__file__)), "whm.db")):
+        os.mknod(os.path.join(os.path.abspath(os.path.dirname(__file__)), "whm.db"))
+        if not to_sql(
+            "CREATE TABLE 'requests' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'username' TEXT NOT NULL, 'pw' TEXT NOT NULL, 'first' TEXT NOT NULL, 'last' TEXT NOT NULL, 'email' TEXT NOT NULL, 'phone' TEXT NOT NULL)",
+            "w",
+            "whm.db"
+        )['success']:
+            print("Failed to create requests table")
+        if not to_sql(
+            "CREATE TABLE 'users' ('user_id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,'username' TEXT NOT NULL, 'pw' TEXT NOT NULL, 'first' TEXT NOT NULL, 'last' TEXT NOT NULL, 'email' TEXT NOT NULL, 'phone' TEXT NOT NULL, 'su' BOOLEAN NOT NULL)",
+            "w",
+            "whm.db"
+        )['success']:
+            print("failed to create users table")
+        logger.write('whm.db initialized.')
+
     # Remember CLI and welcome user.
     cli = True
     print("\n\nWelcome to the WHM user management CLI!\n")

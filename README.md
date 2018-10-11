@@ -32,11 +32,12 @@ git clone https://github.com/TRalls/WebHostManagement.git
     * Ensure your network equipment and settings allow the configured port to pass traffic.
 * Start application.py.
 * The application is now accessible by IP/Domain Name:Port.
+* Consider auto-running this application on boot.
 
 ## Build Status
 
+Running with no known errors on physical hardware on Python3.6.6.
 Running with no known errors on Cloud9 dev environment on Python3.6.0 (Demo mode).
-Testing on physical hardware on Python3.6.6.
 
 ## Stack
 
@@ -101,7 +102,7 @@ Admins can view user logs on the logs tab. These logs show activities carried ou
 
 #### Settings
 
-Standard users only see a form to update their personal information here. Admins see the same form but can also manage current and requesting users from here. This is also where admins can configure behavior of logs and records of metrics. Configuration settings are stored in whm.cfg, but it is best not to edit this manually.
+Standard users only see a form to update their personal information here. Admins see the same form but can also manage current and requesting users from here. This is also where admins can configure behavior of logs and records of metrics. Configuration settings are stored in whm.cfg, but it is best not to edit this manually (except for port_n).
 
 ### Command Line Tools
 

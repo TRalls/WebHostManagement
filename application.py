@@ -22,6 +22,8 @@ from passlib.apps import custom_app_context as pwd_context
 from tempfile import mkdtemp
 import configparser
 import atexit
+import os
+from shutil import copyfile
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from logger import Logger
@@ -43,13 +45,35 @@ Session(app)
 # Use to read and write notable events.
 logger = Logger("Unknown", "WebApp")
 
+# Initialize config from default if it doesn't exist.
+project_path = os.path.abspath(os.path.dirname(__file__))
+if not os.path.exists(os.path.join(project_path, 'whm.cfg')):
+    try:
+        copyfile(os.path.join(project_path, 'whm.cfg.bak'), os.path.join(project_path, 'whm.cfg'))
+        logger.write('Initialized config')
+    except:
+        logger.write('Failed to initialize config.')
+        exit(1)
+
+# Create chart_data.db if it doesn't exist.
+if not os.path.exists(os.path.join(project_path, 'chart_data.db')):
+    try:
+        os.mknod(os.path.join(project_path, 'chart_data.db'))
+    except:
+        logger.write('Failed to initialize chart_data.db.')
+        exit(1)
+
 """
     To be ran once, when the webapp is first accessed.
 """
 @app.before_first_request
 def before_first_request():
+
     # Load record keeping config settings
     load_record_conf()
+
+    # First data point on hours scale. Having this point helps JS build charts in the first hour of running.
+    record_metrics('hours')
 
     # Schedule recording of metrics for charting.
     # https://stackoverflow.com/questions/21214270/scheduling-a-function-to-run-every-hour-on-flask
@@ -59,21 +83,21 @@ def before_first_request():
     scheduler.add_job(
         func=record_metrics,
         args=["hours"],
-        trigger=IntervalTrigger(minutes=1), # hours=1 (May use other values for testing.)
+        trigger=IntervalTrigger(seconds=20), # hours=1 (May use other values for testing.)
         id='hourly_metrics',
         name='Records current metrics on an hourly scope',
         replace_existing=True)
     scheduler.add_job(
         func=record_metrics,
         args=["days"],
-        trigger=IntervalTrigger(hours=1), # days=1
+        trigger=IntervalTrigger(days=1), # days=1
         id='daily_metrics',
         name='Records current metrics on a daily scope',
         replace_existing=True)
     scheduler.add_job(
         func=record_metrics,
         args=["weeks"],
-        trigger=IntervalTrigger(hours=2), # weeks=1
+        trigger=IntervalTrigger(weeks=1), # weeks=1
         id='weekly_metrics',
         name='Records current metrics on a weekly scope',
         replace_existing=True)
@@ -403,6 +427,50 @@ def settings():
                     'details': "Function ran with no errors."
                 })
 
+            if request.form.get('section') == "port":
+                # Load default from backup config if defaults are requested, or load settings from the form.
+                if int(request.form.get('port_default_flag')) == 1:
+                    settings = get_config('whm.cfg.bak')
+                    if not settings['return']:
+                        # Ensure backup config was loaded.
+                        session['logger'].write(settings['details'])
+                        return jsonify(settings)
+                else:
+                    settings = {
+                        'port_n': request.form.get('port_n')
+                    }
+
+                # Ensure port is a positive whole number.
+                try:
+                    x = int(settings['port_n'])
+                    if not 1 <= x:
+                        raise Exception()
+                except:
+                    return jsonify({
+                        'return': False,
+                        'details': "Port number must be a positive whole number."
+                    })
+
+                # Attempt to write port number.
+                try:
+                    config = configparser.RawConfigParser()
+                    config.read('whm.cfg')
+                    config.set('general', 'port_n', settings['port_n'])
+                    with open('whm.cfg', 'w') as configfile:
+                        config.write(configfile)
+                except:
+                    return jsonify({
+                        'return': False,
+                        'details': "Failed to write config."
+                    })
+
+                # Log and return success.
+                session["logger"].write("Log config changed")
+                return jsonify({
+                    'return': True,
+                    'details': "Function ran with no errors."
+                })
+
         # User table actions - Requests can be accepted or declined, and current users can be deleted or have admin rights toggled.
         # Requests are handled by users.py and actions are logged.
         if request.form.get('action') == "accept":
@@ -412,6 +480,7 @@ def settings():
                     'return': False,
                     'details': "Failed to accept user."
                 })
+
         # User action handling.
         if request.form.get('action') == "decline":
             users.delReq(request.form.get('request_id'))
@@ -448,6 +517,10 @@ def storage():
 def login():
     # Clear any active session.
     session.clear()
+
+    # Check if whm.db exists - redirect if not.
+    if not os.path.exists(os.path.join(os.path.abspath(os.path.dirname(__file__)), "whm.db")):
+        return render_template("init.html")
 
     # Attempt login.
     if request.method == "POST":
@@ -519,6 +592,10 @@ def logout():
 def register():
     # Clear any active sesssion.
     session.clear()
+
+    # Check if whm.db exists - redirect if not.
+    if not os.path.exists(os.path.join(os.path.abspath(os.path.dirname(__file__)), "whm.db")):
+        return render_template("init.html")
 
     # POST - Incoming user registration request.
     if request.method == "POST":
@@ -635,7 +712,7 @@ def command():
 
     # Action to restart.
     if request.form.get('action') == 'restart':
-        command = "restart -r now"
+        command = "shutdown -r now"
 
     # Log the command that resulted from the request parameters.
     session["logger"].write("Running command: " + command)

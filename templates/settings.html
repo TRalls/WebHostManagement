@@ -385,5 +385,46 @@
                 </ul>
             </form>
         </div>
+
+        <!-- Port number config. -->
+        <div id="port_config" class="boxed-div">
+            <h1>
+                Network Port
+            </h1>
+            <p>
+                <i>Take care when changing this. Ensure that the new port number is not in use by another service. Changes will take
+                effect next time the application starts.</i><br />
+                <span class='rules'>Must be a positive whole number. This application will not check if the new port number is safe
+                to use. Take care in changing.</span>
+            </p>
+			<form id="set_port_config" class="set_config" action="settings" method="POST">
+                <!-- Currect setting values show as loading until JS changes them -->
+                <ul class="config_list">
+                    <li>
+                        <ul>
+                            <li>
+                                <strong>Port Number</strong>
+                            </li>
+                            <li>
+                                <p>This is the port number to access this Webapp.</p>
+                            </li>
+                            <li>
+                                Number: <span id="port_n" class="config_value">loading...</span>
+                                <input class="form-control" name="port_n" placeholder="Port Number" type="number" min="1" />
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <!-- Hidden variables for server request. -->
+                        <input type="hidden" id="port_default_flag" name="port_default_flag" value="0" />
+                        <input type="hidden" id="section" name="section" value="port" />
+
+                        <button class="btn btn-default" type="submit">Save</button>
+                        <button id="port_to_default" class="btn btn-default" type="button">Restore Default</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </div>
 {% endblock %}
