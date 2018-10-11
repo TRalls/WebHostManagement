@@ -163,7 +163,7 @@ This application was developed with security in mind but I do not guarantee safe
 
 ## Contribute
 
-This project is in near completed state. All TODOs are arranged to be completed. Since I am an aspiring developer, I do welcome all feedback. I cannot promise to implement feature requests, but any and all feedback would help greatly.
+This project is in near completed state and should only require small touch ups. Since I am an aspiring developer, I do welcome all feedback. I cannot promise to implement feature requests, but any and all feedback would help greatly.
 
 ## Credits
 
@@ -174,8 +174,8 @@ This project is in near completed state. All TODOs are arranged to be completed.
 * Refresh button asset
     * https://www.iconfinder.com/icons/134221/arrow_refresh_reload_repeat_sync_update_icon
     * License Creative Commons
-* Form submission handling: https://mobility.amazon.com/part/search?search_string=P9078+&query=GO&search_type=all&max_rows=50
-* Random facts while waiting for system reboots: mentalfloss.com
+* Form submission handling: https://stackoverflow.com/questions/23507608/form-submission-without-page-refresh
+* Random facts while waiting for system reboots: https://mentalfloss.com
 
 ## License
 
