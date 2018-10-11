@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    See README.txt for info on fuctionality of this webapp. This file serves as the access point for client
+    See README.md for info on fuctionality of this webapp. This file serves as the access point for client
     side scripts to interact of WHM functions. Some of these functions can alternatively be accessed via WHM
     CLI tools if the user has access to the systems CLI.
 
