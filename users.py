@@ -13,6 +13,7 @@
 
 import sqlite3
 import os
+import getpass
 from logger import Logger
 from helpers import to_sql, validate_sql
 from passlib.apps import custom_app_context as pwd_context
@@ -322,8 +323,8 @@ def newPassword(user_id):
     Get password from user, verify it, and return its hash.
 """
 def getHash():
-    phash = pwd_context.hash(input("Set Password: "))
-    if not pwd_context.verify(input("Verify Password: "), phash):
+    phash = pwd_context.hash(getpass.getpass("Set Password: "))
+    if not pwd_context.verify(getpass.getpass("Verify Password: "), phash):
         print("\tPasswords do not match. Please try again...")
         return getHash()
     return phash
