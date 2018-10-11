@@ -125,7 +125,7 @@ def record_metrics(scope):
         to_sql('DELETE from "' + table + '" where time < strftime("%Y-%m-%d %H:%M:%S", "' + oldest_time_str + '")', 'w', 'chart_data.db')
 
     """
-        Prepars data (a dictionary) to be entered into an SQL command.
+        Prepares data (a dictionary) to be entered into an SQL command.
         Returns (String of CSV as entered in SQL, List of keys to correspond with the CSV).
     """
     def dict_to_sql_part(data):
