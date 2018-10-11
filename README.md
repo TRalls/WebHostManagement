@@ -145,6 +145,14 @@ The following files are used by the application and can also be ran from the com
 ```
 Used to manage current and requesting users. Text menus are used to navigate the functionality of this file. This file must be ran to create the first admin user before the web interface can be used. After this first user is created, all other new users default to standard (non-admin) users.
 
+## Content
+
+Screenshots:
+https://photos.app.goo.gl/4YxeLtWohaHEVpm8A
+
+Video:
+TBD
+
 ## Security
 
 This application was developed with security in mind but I do not guarantee safe operations while using it. Please note the following.
