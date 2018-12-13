@@ -36,7 +36,7 @@ git clone https://github.com/TRalls/WebHostManagement.git
 
 ### Auto-Running
 
-The setup to run this application at boot will vary by system. In order to get full functionality this application much run as root. The following worked for my system at home running Debian 3.16.51-3.
+The setup to run this application at boot will vary by system. In order to get full functionality this application must run as root. The following worked for my system at home running Debian 3.16.51-3.
 * Install sudo if not already installed.
 * Set up a startup script in your location of choice. I named mine start.sh within my whm directory.
 * Place the following in the script:
